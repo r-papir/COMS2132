@@ -1,9 +1,15 @@
 **Array:** a linear datatype and structure that stores elements of the same data type in contiguous memory locations
+
 **Tuple:** a datatype representing an ordered, immutable (unchangeable) collection of elements
+
 **List:** a built-in datatype in python based on arrays; holds elements of different data types
+
 **Matrix:** a arbitrary multidimensional array
+
 **Vector:** an array that can change in size dynamically during runtime
+
 **Linked List:** a type of list where the elements (nodes) are scattered throughout memory and linked by 'pointers'
+
 
 *Visualization of a linked list:*
 ![comparison of built-in Python list structure to linked list structure](linked_list.png)
