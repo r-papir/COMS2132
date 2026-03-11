@@ -12,7 +12,7 @@ In Python, some basic operations we can do on elements in a data structure (spec
 
 + The basic data type in is the numpy *n-dimensional* array; these can be used to represent *vectors* (1D), *matrices* (2D), or *tensors* (nD)
 
-<u> Read more about *Shallow and Deep Copy Operations* [**here**](https://docs.python.org/3/library/copy.html) </u>
+Read more about *Shallow and Deep Copy Operations* [**here**](https://docs.python.org/3/library/copy.html).
 
 **Array:** a linear datatype and structure that stores elements of the *same* datatype in contiguous memory locations
 
@@ -22,9 +22,11 @@ In Python, some basic operations we can do on elements in a data structure (spec
 
 <br>
 
-For representing multidimensional data, we would use a *matrix*, but the underlying structure of matrices still stores elements in the form of a *referential array*:
+For representing multidimensional data, we would use a *matrix*, but the underlying structure of matrices still stores elements in the form of a *referential array*.
 
-#### The correct way to create a matrix:
+<details>
+<summary> The correct way to create a matrix</summary>
+
 ```python
 from copy import deepcopy
 
@@ -38,6 +40,8 @@ for j in range(row):
     matrix.append(my_row)
 
 matrix = make_matrix(5,3)
+```
+</details>
 
 # Let's try to modify a single cell within the matrix
 matrix[2][0] = 42
