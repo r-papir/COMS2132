@@ -105,7 +105,7 @@ m = numpy.array([[1,2,3]])
 m.shape
 ```
 ```python
-# Create a double array directly using literals
+# Create a single array directly using literals
 m = numpy.array([1,2,3])
 m.shape
 ```
