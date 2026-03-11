@@ -144,17 +144,17 @@ Learn more about the NumPy module [**here**](https://numpy.org/).
 
 ## Stacks
 
-Stacks are one of the most fundamental and useful data structures. It has the following characteristics:
+Stacks are one of the most fundamental and useful data structures. They have the following characteristics:
 
 + It is a collection of items (not necessarily of the same types)
 
 + New items can be inserted (**pushed**) at any time (the size is unbounded)
 
-+ Only the most recently inserted item can be accessed (i.e., no indexing)
++ Only the most recently inserted item can be accessed (i.e. no indexing)
 
 + Only the most recently inserted item can be removed (**popped**)
 
-+ The most recently inserted item is called the top of the stack
++ The most recently inserted item is called the **top** of the stack
 
 + We say a stack follows the **last in, first out (LIFO)** principle (i.e. the most recently pushed item is the one popped next)
 
@@ -185,7 +185,7 @@ Some of these operations function similarly as they would in lists, but we use d
 | S.len() | len(L) |
 
 
-### Stack Operations:
+### Stack operations:
 ```python
 class Empty(Exception):
     '''Exception raised by stack operations on error
@@ -277,3 +277,172 @@ len(s)      # Should return 2
 ```
 
 Learn more about stacks [**here**](https://www.geeksforgeeks.org/python/stack-in-python/).
+
+Learn more about stack implementation using a ***linked list*** [**here**](https://www.geeksforgeeks.org/dsa/implement-a-stack-using-singly-linked-list/).
+
+
+## Queues
+
+Queues are another fundamental data structure. The queues is very similar to a stack:
+
++ It follows the **first-in, first-out (FIFO)** principle (i.e. elements enter the queue from the back and are removed from the front)
+
++ Holds a collection of items (not necessarily of the same types)
+
++ New items can be inserted (**enqueued**) at any time (the size is unbounded)
+
++ Only the oldest item can be accessed (i.e. no indexing)
+
++ Only the oldest item can be removed (**popped**)
+
++ The item that has been on the queue the longest is called the **front**
+
++ The most recently added item is called the **back**
+
+*Visualization of a queue:*
+
+![chronology of 3 queue elements](queue.png)
+
+```python
+queue = []
+queue.append("A") # we use append instead of enqueue
+queue.append("B")
+queue.append("C") 
+
+queue.pop(0)  # we use pop(0) instead of dequeue 
+```
+
+### Queue operations:
+```python
+class Queue:
+    'The queue abstract data type'
+    
+    def enqueue(self, e):
+        'Add element e to the back of the queue'
+        pass
+
+    def dequeue(self):
+        'Remove and return (first) element from the front of the queue'
+        pass
+
+    def first(self):
+        'Return a reference to the first element in the queue'
+        pass
+
+    def is_empty(self):
+        'Return true if the queue is empty'
+        pass
+
+    def __len__(self):
+        'Return the number of elements in the queue'
+        pass
+```
+
+### Implementing a queue with fixed-size circular lists:
+
+Unfortunately, a naive array-based implementation of a queue has a very slow asymptotic runtime, which could be computationally costly. Instead, we would can implement a queue much faster using a *fixed-size circular list.*
+
++ Allow the front of the queue to move right
+
++ Allow the contents to wrap around like a circle
+
+*Visualization of a fixed-size circular list:*
+
+![fixed-size circular list](circular-array-1.png)
+
+To actually implement this, we can store our elements in a list like before, but let's make the list *fixed-size* for now, i.e., it will not be enlarged or shrunken. This also means our queue will have a maximum size. We will also keep track of the index of the front element (it will not necessarily be 0). We will also keep the number of elements in the queue in a separate variable. Since we will not necessarily have items starting at index 0, we can no longer rely on the length of the list for queue size.
+
+```python
+class Full(Exception):
+    'An exception raised when the queue is full'
+    pass
+
+class CircularListQueue:
+    'A queue implementation using a fixed-size Python list to store elements'
+    
+    DEFAULT_SIZE = 10  # When creating a new queue, create an empty list of this size
+
+    def __init__(self):
+        'Create a new empty queue instance'
+        self._data = [ None ] * CircularArrayQueue.DEFAULT_SIZE   # Create a list of DEFAULT_SIZE None values
+        self._front = 0    # Initialize the reference to the front of the queue
+        self._back = 0     # Initialize the reference to the back of the queue
+        self._size = 0     # Logical number of elements. Initially, the queue is empty
+    
+    def enqueue(self, e):
+        'Add an element to the back of the queue'
+
+        # First, check if the queue is full. If it is, raise an exception
+        if self._size == len(self._data):
+            new_size  = CircularArrayQueue.DEFAULT_SIZE * 2
+            new_data = [None] * new_size
+
+            new_back = 0             
+            for i in range(len(self)): 
+                el =  self.data_[self._front]
+                self._front = (self._front + 1) % CircularArrayQueue.DEFAULT_SIZE
+                new_data[new_back] = el 
+                new_back += 1
+
+            self._data = new_data
+            self._front = 0
+            self._back = new_back
+
+            
+            #raise Full('The queue is full')
+
+        # If it is not, add the item at the back
+        self._data[self._back] = e
+
+        # Advance the back pointer modulo the size of the circular list.
+        # The modulo operation will make the value wrap around if necessary.
+        self._back = (self._back + 1) % CircularArrayQueue.DEFAULT_SIZE
+
+        # And increase the size of the queue
+        self._size += 1
+    
+    def dequeue(self):
+        'Remove an element from the front of the queue'
+
+        # First, make sure the queue is not empty
+        if len(self._size) == 0:
+            raise Empty('The queue is empty')
+
+        # Get the front element
+        el = self._data[self._first]
+
+        # Erase the value from the list to help the garbage collector
+        self._data[self._front] = None
+
+        # Decrease the size of the queue
+        self._size -= 1
+
+        # Update the pointer to the front. Use modulo arithmetic to wrap around
+        self._front = (self._front + 1) % CircularArrayQueue.DEFAULT_SIZE
+
+        # Return the previously retrieved element
+        return el
+
+    def first(self):
+        'Return a reference to the first element in the queue'
+        if self._size == 0:
+            raise Empty('The queue is empty')
+
+        # Return a reference to the first element in the queue
+        return self._data[self._front]
+
+    def is_empty(self):
+        'Return true if the queue is empty'
+        if self._size == 0:
+            return True
+        else:
+            return False
+
+    def __len__(self):
+
+        return len(self._size)
+```
+
+Learn more about queue implementation using circular linked lists [**here**](https://www.geeksforgeeks.org/dsa/circular-linked-list-implementation-of-circular-queue/).
+
+
