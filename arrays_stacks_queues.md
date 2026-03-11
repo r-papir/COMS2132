@@ -11,8 +11,7 @@
 **Vector:** an array that can change in size dynamically during runtime
 
 **Linked List:** a type of list where the elements (nodes) are scattered throughout memory and linked by 'pointers'
-
-
+<br>
 *Visualization of a linked list:*
 ![comparison of built-in Python list structure to linked list structure](linked_list.png)
 
