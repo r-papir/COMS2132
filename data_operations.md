@@ -4,6 +4,8 @@ In Python, some basic operations we can do on elements in a data structure (spec
 
 ## Vocabulary
 
+**Abstract Data Type:** defines the data and operations (methods) on the data, like a contract between the data structure and the programmer → we will model abstract data types with *classes*
+
 **DeepCopy:** a built-in function in Python that creates a completely independent clone of an object, including all objects it refers to, recursively
 
 **NumPy:** a standard package for numeric computing in Python
@@ -159,3 +161,66 @@ Stacks are one of the most fundamental and useful data structures. It has the fo
 *Visualization of a stack:*
 
 ![hierarchy of 3 stack elements](stack.png)
+
+```python
+stack = []
+stack.append("A") # use append instead of push
+stack.append("B")
+stack.append("C")
+print(stack.pop())
+print(stack.pop())
+print(stack.pop())
+
+stack.pop()
+```
+
+### Some of these operations function similarly as they would in lists, but we use different commands for stacks:
+
+| ***Stacks***    | ***Lists*** |
+| -------- | ------- |
+| S.push(e)| L.append(e)|
+| S.pop()  | L.pop() |
+| S.top()    | L[-1] |
+| S.is_empty() | len(L) == 0 |
+| S.len() | len(L) |
+
+
+
+## Let's :
+```python
+class Empty(Exception):
+    '''Exception raised by stack operations on error
+
+    This exception is raised by the stack pop() operation when the stack is empty, i.e.,
+    there is nothing to pop.
+    '''    
+    pass
+
+
+class Stack:
+    '''This class represents the stack abstract data type
+
+    The methods below have empty bodies. We will implement them later in an actual
+    stack implementation based on a Python list.
+    '''
+    
+    def push(self, e):
+        'Add element e to the top of the stack' 
+        pass
+
+    def pop(self):
+        'Remove and return the top element from the stack. Raise error if the stack is empty'
+        pass
+
+    def top(self): # also known as peek()
+        'Return a reference to the top (without removing it)'
+        pass
+
+    def is_empty(self):
+        'Return True if the stack is empty and false otherwise'
+        pass
+
+    def __len__(self):
+        'Return the number of elements in the stack'
+        pass
+```
