@@ -37,7 +37,7 @@
 
 ## Singly Linked Lists
 
-Read more about singly linked lists [**here**](https://www.geeksforgeeks.org/python/singly-linked-list-in-python/#what-is-a-singly-linked-list).  
+Lear more about singly linked lists [**here**](https://www.geeksforgeeks.org/python/singly-linked-list-in-python/#what-is-a-singly-linked-list).  
 
 ```python
 # Example 1 (GeeksforGeeks)
@@ -178,6 +178,18 @@ print(queue.deque()) # expecting: python
 
 *Visualization of doubly linked list with sentinels:*
 ![visualization of doubly linked list with sentinels](doubly-linked-list-sentinels.png)
+
+Lear more about doubly linked lists [**here**](https://www.geeksforgeeks.org/dsa/doubly-linked-list/)
+
+
+### Extending the node class in doubly linked lists:
+```python
+class Node:
+    def __init__(self, element, prev, next):
+        self.element = element
+        self.next = next
+        self.prev = prev
+```
 
 
 #### The correct way to create a matrix:
