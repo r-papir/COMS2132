@@ -75,6 +75,7 @@ For collections that are mutable or contain mutable items, a *copy* may be neede
 
 <details>
 <summary><strong>Using copy methods:</strong></summary>
+
 ```python
 i = [1,2,3]
 
