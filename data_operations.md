@@ -75,7 +75,7 @@ For collections that are mutable or contain mutable items, a *copy* may be neede
 
 <details>
 <summary><strong>Using copy methods:</strong></summary>
-
+```python
 i = [1,2,3]
 
 # shallow copy
@@ -97,9 +97,11 @@ li2 = li[:]
 
 li[0][0] = 0 
 li
+```
 </details>
 
 ### Multidimensional arrays are made much simpler by using the *NumPy* module:
+
 ```python
 # Creating multidimensional arrays using numpy.array is straightforward
 matrix = numpy.array([[0, 0, 0], [0, 0, 0], [0, 0, 0]])
