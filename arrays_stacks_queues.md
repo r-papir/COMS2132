@@ -174,6 +174,11 @@ print(queue.deque()) # expecting: python
 
 ## Doubly Linked Lists
 
+**Sentinels:** fixed empty nodes before head and after tail of a linked list in a *doubly linked lists*; these guarantee that every node has a previous node and that every node has a next node, including the head and the tail
+
+*Visualization of doubly linked list with sentinels:*
+![visualization of doubly linked list with sentinels](doubly-linked-list-sentinels.png)
+
 
 #### The correct way to create a matrix:
 ```python
