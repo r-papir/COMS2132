@@ -5,7 +5,7 @@ In Python, some basic operations we can do on elements in a data structure (spec
 ### Vocabulary
 
 <details>
-<summary>Abstract Data Type</summary>
+<summary><strong>Abstract Data Type</strong></summary>
 <br>
 
 **Abstract Data Type:** defines the data and operations (methods) on the data, like a contract between the data structure and the programmer → we will model abstract data types with *classes*
@@ -29,6 +29,8 @@ In Python, some basic operations we can do on elements in a data structure (spec
 Read more about *Shallow and Deep Copy Operations* [**here**](https://docs.python.org/3/library/copy.html).
 
 </details>
+
+<details>
 <summary>Array (datatype/structure)</summary>
 <br>
 
