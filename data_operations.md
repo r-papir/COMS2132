@@ -154,7 +154,7 @@ Stacks are one of the most fundamental and useful data structures. It has the fo
 
 + The most recently inserted item is called the top of the stack
 
-+ We say a stack follows the last in, first out (**LIFO**) principle (the most recently pushed item is the one popped next)
++ We say a stack follows the **last in, first out (LIFO)** principle (the most recently pushed item is the one popped next)
 
 *Visualization of a stack:*
 
