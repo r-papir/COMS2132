@@ -31,6 +31,8 @@
 *Visualization of a linked list:*
 ![comparison of built-in Python list structure to linked list structure](linked_list.png)
 
+<br>
+
 ## Singly Linked Lists
 
 Read more about singly linked lists [**here**](https://www.geeksforgeeks.org/python/singly-linked-list-in-python/#what-is-a-singly-linked-list).  
