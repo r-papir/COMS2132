@@ -2,7 +2,9 @@
 
 In Python, some basic operations we can do on elements in a data structure (specifically, arrays) include **integer indexing**, **insertion**, **removal**, and **appendation**. This guide will expand on more operations we can implement using *imported modules*.
 
-### Vocabulary
+## Vocabulary
+
+Click on each term below to read its definition.
 
 <details>
 <summary><strong>Abstract Data Type:</strong></summary>
@@ -19,7 +21,7 @@ A built-in function in Python that creates a completely independent clone of an 
 </details>
 
 <details>
-<summary><strong>NumPy (module)</strong></summary>
+<summary><strong>NumPy (module):</strong></summary>
 <br>
 
 A standard package for numeric computing in Python
@@ -31,7 +33,7 @@ Read more about *Shallow and Deep Copy Operations* [**here**](https://docs.pytho
 </details>
 
 <details>
-<summary><strong>Array (datatype/structure)</strong></summary>
+<summary><strong>Array (datatype/structure):</strong></summary>
 <br>
 
 A linear datatype and structure that stores elements of the *same* datatype in contiguous memory locations
