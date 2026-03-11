@@ -86,7 +86,7 @@ Many Python built-in operators have been overloaded for NumPy arrays to make wor
 ```python
 u.max(), u.min(), u.mean(), u.std() # maximum, minimum, mean, standard deviation
 ```
-The parameter **dtype="uint64** tells NumPy what data types cells should use. NumPy arrays are homogeneous, and each cell has a maximum value that it can store which is determined by the data type.
+The parameter **dtype="uint64"** tells NumPy what data types cells should use. NumPy arrays are homogeneous, and each cell has a maximum value that it can store which is determined by the data type.
 ```python
 rows = 4
 cols = 3
@@ -100,14 +100,12 @@ print(matrix)
 
 We can create an array using *literals* (notation in the source code that represents a fixed data value directly):
 ```python
-# Create directly using literals
-
+# Create a double array directly using literals
 m = numpy.array([[1,2,3]])
 m.shape
 ```
-Then, we can...
-
 ```python
+# Create a double array directly using literals
 m = numpy.array([1,2,3])
 m.shape
 ```
