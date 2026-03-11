@@ -12,7 +12,7 @@ In Python, some basic operations we can do on elements in a data structure (spec
 
 + The basic data type in is the numpy *n-dimensional* array; these can be used to represent *vectors* (1D), *matrices* (2D), or *tensors* (nD)
 
-Read more about *Shallow and Deep Copy Operations* [**here**](https://docs.python.org/3/library/copy.html).
+**Read more about** ***Shallow and Deep Copy Operations*** [**here**](https://docs.python.org/3/library/copy.html).
 
 **Array:** a linear datatype and structure that stores elements of the *same* datatype in contiguous memory locations
 
