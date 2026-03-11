@@ -160,7 +160,7 @@ Stacks are one of the most fundamental and useful data structures. They have the
 
 *Visualization of a stack:*
 
-![hierarchy of 3 stack elements](stack.png)
+![hierarchy of 3 stack elements](images/stack.png)
 
 ```python
 stack = []
@@ -301,7 +301,7 @@ Queues are another fundamental data structure. The queues is very similar to a s
 
 *Visualization of a queue:*
 
-![chronology of 3 queue elements](queue.png)
+![chronology of 3 queue elements](images/queue.png)
 
 ```python
 queue = []
@@ -348,7 +348,7 @@ Unfortunately, a naive array-based implementation of a queue has a very slow asy
 
 *Visualization of a fixed-size circular list:*
 
-![fixed-size circular list](circular-array-1.png)
+![fixed-size circular list](images/circular-array-1.png)
 
 To actually implement this, we can store our elements in a list like before, but let's make the list *fixed-size* for now, i.e., it will not be enlarged or shrunken. This also means our queue will have a maximum size. We will also keep track of the index of the front element (it will not necessarily be 0). We will also keep the number of elements in the queue in a separate variable. Since we will not necessarily have items starting at index 0, we can no longer rely on the length of the list for queue size.
 

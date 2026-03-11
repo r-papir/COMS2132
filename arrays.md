@@ -31,7 +31,7 @@
 <br>
 
 *Visualization of a linked list:*
-![comparison of built-in Python list structure to linked list structure](linked_list.png)
+![comparison of built-in Python list structure to linked list structure](images/linked_list.png)
 
 <br>
 
@@ -177,7 +177,7 @@ print(queue.deque()) # expecting: python
 **Sentinels:** fixed empty nodes before head and after tail of a linked list in a *doubly linked lists*; these guarantee that every node has a previous node and that every node has a next node, including the head and the tail
 
 *Visualization of doubly linked list with sentinels:*
-![visualization of doubly linked list with sentinels](doubly-linked-list-sentinels.png)
+![doubly linked list with sentinels](images/doubly-linked-list-sentinels.png)
 
 Lear more about doubly linked lists [**here**](https://www.geeksforgeeks.org/dsa/doubly-linked-list/)
 
