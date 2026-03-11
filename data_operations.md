@@ -1,4 +1,4 @@
-# Data Structures: Operations
+# Data Structures & Operations
 
 In Python, some basic operations we can do on elements in a data structure (specifically, arrays) include **integer indexing**, **insertion**, **removal**, and **appendation**. This guide will expand on more operations we can implement using *imported modules*.
 
@@ -100,18 +100,18 @@ print(matrix)
 
 We can create an array using *literals* (notation in the source code that represents a fixed data value directly):
 ```python
-# Create a double array directly using literals
+# Creates a double array directly using literals
 m = numpy.array([[1,2,3]])
 m.shape
 ```
 ```python
-# Create a single array directly using literals
+# Creates a single array directly using literals
 m = numpy.array([1,2,3])
 m.shape
 ```
-And then, we can create a vector and reshape the array in different ways:
+We can also reshape the array in different ways:
 ```python
-# Create a vector and reshape
+# Creates a 2D vector
 m = numpy.array(range(27))
 m
 
@@ -119,6 +119,7 @@ m
 #       17, 18, 19, 20, 21, 22, 23, 24, 25, 26])
 ```
 ```python
+# Reshapes the vector into a 3D array
 m2 = m.reshape((3,3,3))
 m2
 
@@ -135,5 +136,25 @@ m2
         [24, 25, 26]]])
 '''
 ```
-
 Learn more about the NumPy module [**here**](https://numpy.org/).
+
+<br>
+
+## Stacks
+
+Stacks are one of the most fundamental and useful data structures. It has the following characteristics:
+
++ It is a collection of items (not necessarily of the same types)
+
++ New items can be inserted (**pushed**) at any time (the size is unbounded)
+
++ Only the most recently inserted item can be accessed (i.e., no indexing)
+
++ Only the most recently inserted item can be removed (**popped**)
+
++ The most recently inserted item is called the top of the stack
+
++ We say a stack follows the last in, first out (**LIFO**) principle (the most recently pushed item is the one popped next)
+
+*Visualization of a stack:*
+![hierarchy of 3 stack elements](stacked.png)

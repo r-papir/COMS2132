@@ -190,26 +190,3 @@ class Node:
         self.next = next
         self.prev = prev
 ```
-
-
-#### The correct way to create a matrix:
-```python
-from copy import deepcopy
-
-def make_matrix(col, row):
-    return [[0] * col for j in range(row)]
-
-new_row = [0] * col
-matrix = []
-for j in range(row): 
-    my_row = deepcopy(new_row)
-    matrix.append(my_row)
-
-matrix = make_matrix(5,3)
-
-# Let's try to modify a single cell within the matrix
-matrix[2][0] = 42
-
-# Print the matrix to see the result
-print(matrix)
-```
