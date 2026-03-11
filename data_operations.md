@@ -5,24 +5,24 @@ In Python, some basic operations we can do on elements in a data structure (spec
 ### Vocabulary
 
 <details>
-<summary><strong>Abstract Data Type</strong></summary>
+<summary><strong>Abstract Data Type:</strong></summary>
 <br>
 
-**Abstract Data Type:** defines the data and operations (methods) on the data, like a contract between the data structure and the programmer → we will model abstract data types with *classes*
+Defines the data and operations (methods) on the data, like a contract between the data structure and the programmer → we will model abstract data types with *classes*
 </details>
 
 <details>
-<summary>DeepCopy (operation)</summary>
+<summary><strong>DeepCopy (operation):</strong></summary>
 <br>
 
-**DeepCopy:** a built-in function in Python that creates a completely independent clone of an object, including all objects it refers to, recursively
+A built-in function in Python that creates a completely independent clone of an object, including all objects it refers to, recursively
 </details>
 
 <details>
-<summary>NumPy (module)</summary>
+<summary><strong>NumPy (module)</strong></summary>
 <br>
 
-**NumPy:** a standard package for numeric computing in Python
+A standard package for numeric computing in Python
 
 + The basic data type in is the numpy *n-dimensional* array; these can be used to represent *vectors* (1D), *matrices* (2D), or *tensors* (nD)
 
@@ -31,10 +31,10 @@ Read more about *Shallow and Deep Copy Operations* [**here**](https://docs.pytho
 </details>
 
 <details>
-<summary>Array (datatype/structure)</summary>
+<summary><strong>Array (datatype/structure)</strong></summary>
 <br>
 
-**Array:** a linear datatype and structure that stores elements of the *same* datatype in contiguous memory locations
+A linear datatype and structure that stores elements of the *same* datatype in contiguous memory locations
 
 + **Matrix:** a arbitrary multidimensional array (e.g. a tic-tac-toe board)
 
