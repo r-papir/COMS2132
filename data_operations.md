@@ -132,18 +132,31 @@ matrix[2,0] = 255
 print(matrix)
 ```
 
-We can create an array using *literals* (notation in the source code that represents a fixed data value directly):
+We can create an array directly using ***literals*** (notation in the source code that represents a fixed data value directly).
+
+<details>
+<summary><strong>Double array using literals</strong></summary>
+
 ```python
-# Creates a double array directly using literals
 m = numpy.array([[1,2,3]])
 m.shape
 ```
+</details>
+
+<details>
+<summary><strong>Single array using literals</strong></summary>
+
 ```python
-# Creates a single array directly using literals
 m = numpy.array([1,2,3])
 m.shape
 ```
+</details>
+
 We can also reshape the array in different ways:
+
+<details>
+<summary><strong>Reshaping into 2D vector</strong></summary>
+
 ```python
 # Creates a 2D vector
 m = numpy.array(range(27))
@@ -152,6 +165,11 @@ m
 # OUTPUT: array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16,
 #       17, 18, 19, 20, 21, 22, 23, 24, 25, 26])
 ```
+</details>
+
+<details>
+<summary><strong>Reshaping into 3D array</strong></summary>
+
 ```python
 # Reshapes the vector into a 3D array
 m2 = m.reshape((3,3,3))
@@ -170,8 +188,9 @@ m2
         [24, 25, 26]]])
 '''
 ```
-Learn more about the NumPy module [**here**](https://numpy.org/).
+</details>
 
+Learn more about the NumPy module [**here**](https://numpy.org/).
 
 
 ## Stacks
