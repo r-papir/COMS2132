@@ -174,7 +174,7 @@ print(stack.pop())
 stack.pop()
 ```
 
-### Some of these operations function similarly as they would in lists, but we use different commands for stacks:
+Some of these operations function similarly as they would in lists, but we use different commands for stacks:
 
 | ***Stacks***    | ***Lists*** |
 | -------- | ------- |
