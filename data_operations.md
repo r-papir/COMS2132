@@ -185,8 +185,7 @@ Some of these operations function similarly as they would in lists, but we use d
 | S.len() | len(L) |
 
 
-
-## Let's :
+### Stack Operations:
 ```python
 class Empty(Exception):
     '''Exception raised by stack operations on error
@@ -195,7 +194,6 @@ class Empty(Exception):
     there is nothing to pop.
     '''    
     pass
-
 
 class Stack:
     '''This class represents the stack abstract data type
@@ -224,3 +222,58 @@ class Stack:
         'Return the number of elements in the stack'
         pass
 ```
+
+### Implementing a stack with lists:
+```python
+class ArrayStack(Stack):
+    'A stack implementation that stores elements in a built-in Python list'
+    
+    def __init__(self):
+        'Creates a new stack instance backed by a built-in Python list'
+        self._data = list()
+    
+    def push(self, e):
+        'Add element e to the top of the stack'
+        self._data.append(e)
+
+    def pop(self):
+        'Remove and return the top element from the stack. Raise error if the stack is empty'
+        if len(self._data) == 0:
+            raise Empty('The stack is empty')
+
+        return self._data.pop()
+    
+    def top(self):
+        'Return a reference to the top (without removing it)'        
+        if len(self._data) == 0:
+            raise Empty('The stack is empty')
+        
+        return self._data[-1]
+
+    def is_empty(self):
+        'Return True if the stack is empty and false otherwise'
+        return len(self._data) == 0
+
+    def __len__(self):
+        'Return the number of elements in the stack'
+        return len(self._data)
+
+    def __repr__(self): 
+        return str(self._data)
+```
+
+```python
+s = ArrayStack()
+s.push(8)
+s.push(2)
+
+# Prints [8, 2]
+print(s) # this technically calls print(str(s)) which is print(s.__str__()) 
+```
+
+```python
+s.is_empty()    # Should return False
+len(s)      # Should return 2
+```
+
+Learn more about stacks [**here**](https://www.geeksforgeeks.org/python/stack-in-python/).
