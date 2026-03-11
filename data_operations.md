@@ -2,27 +2,42 @@
 
 In Python, some basic operations we can do on elements in a data structure (specifically, arrays) include **integer indexing**, **insertion**, **removal**, and **appendation**. This guide will expand on more operations we can implement using *imported modules*.
 
-## Vocabulary
+### Vocabulary
+
+<details>
+<summary>Abstract Data Type</summary>
 
 **Abstract Data Type:** defines the data and operations (methods) on the data, like a contract between the data structure and the programmer → we will model abstract data types with *classes*
+</details>
+
+<details>
+
+<summary>DeepCopy (operation)</summary>
 
 **DeepCopy:** a built-in function in Python that creates a completely independent clone of an object, including all objects it refers to, recursively
+</details>
+
+<summary>NumPy (module)</summary>
 
 **NumPy:** a standard package for numeric computing in Python
 
 + The basic data type in is the numpy *n-dimensional* array; these can be used to represent *vectors* (1D), *matrices* (2D), or *tensors* (nD)
 
 Read more about *Shallow and Deep Copy Operations* [**here**](https://docs.python.org/3/library/copy.html).
+</details>
+
+<summary>Array (datatype/structure)</summary>
 
 **Array:** a linear datatype and structure that stores elements of the *same* datatype in contiguous memory locations
 
 + **Matrix:** a arbitrary multidimensional array (e.g. a tic-tac-toe board)
 
 + **Referential Array:** elements ("references") are stored in a contiguous block of memory, and but the actual data objects are scattered and not necessarily next to each other → elements stored as contiguous sequence of *references* to themselves, rather than storing the actual elements directly
+</details>
 
 <br>
 
-For representing multidimensional data, we would use a *matrix*, but the underlying structure of matrices still stores elements in the form of a *referential array*.
+For representing multidimensional data, we would use a *matrix*, but the underlying structure of matrices stores elements in the form of a *referential array*. Naively implementing this can be inefficient or lead to bugs.
 
 <details>
 <summary> The correct way to create a matrix</summary>
