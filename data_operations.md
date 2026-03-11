@@ -10,7 +10,7 @@ Click on each term below to read its definition.
 <summary><strong>Abstract Data Type:</strong></summary>
 <br>
 
-Defines the data and operations (methods) on the data, like a contract between the data structure and the programmer → we will model abstract data types with *classes*
+A conceptual model that defines a data type by its behavior and the operations that can be performed on it, without specifying how it is implemented. It separates the logical properties of the data from the physical implementation → we will model abstract data types with *classes*
 </details>
 
 <details>
@@ -28,7 +28,7 @@ A standard package for numeric computing in Python
 
 + The basic data type in is the numpy *n-dimensional* array; these can be used to represent *vectors* (1D), *matrices* (2D), or *tensors* (nD)
 
-Read more about *Shallow and Deep Copy Operations* [**here**](https://docs.python.org/3/library/copy.html).
++ Read more about *Shallow and Deep Copy Operations* [**here**](https://docs.python.org/3/library/copy.html).
 
 </details>
 
