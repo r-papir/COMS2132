@@ -40,8 +40,6 @@ for j in range(row):
     matrix.append(my_row)
 
 matrix = make_matrix(5,3)
-```
-</details>
 
 # Let's try to modify a single cell within the matrix
 matrix[2][0] = 42
@@ -49,6 +47,7 @@ matrix[2][0] = 42
 # Print the matrix to see the result
 print(matrix)
 ```
+</details>
 
 ```python
 li = [1,2,3]
