@@ -126,7 +126,7 @@ class SinglyLinkedList:
         self.size += 1
 ```
 
-### Implementing a stack in a singly linked list:
+#### Implementing a stack in a singly linked list:
 ```python
 class LinkedStack:
     def __init__(self):
@@ -148,7 +148,7 @@ print(stack.pop()) # expecting: alpha
 print(stack.pop()) # expecting: 42
 ```
 
-### Implementing a queue with a singly linked list
+#### Implementing a queue with a singly linked list:
 ```python
 class LinkedQueue:
     def __init__(self):
@@ -182,7 +182,7 @@ print(queue.deque()) # expecting: python
 Lear more about doubly linked lists [**here**](https://www.geeksforgeeks.org/dsa/doubly-linked-list/)
 
 
-### Extending the node class in doubly linked lists:
+#### Extending the node class in doubly linked lists:
 ```python
 class Node:
     def __init__(self, element, prev, next):
