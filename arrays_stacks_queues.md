@@ -1,5 +1,7 @@
 # Data Structures: Arrays
 
+<br>
+
 ## Vocabulary
 
 **Array:** a linear datatype and structure that stores elements of the *same* datatype in contiguous memory locations
