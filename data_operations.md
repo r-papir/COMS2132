@@ -352,6 +352,14 @@ Unfortunately, a naive array-based implementation of a queue has a very slow asy
 
 To actually implement this, we can store our elements in a list like before, but let's make the list *fixed-size* for now, i.e., it will not be enlarged or shrunken. This also means our queue will have a maximum size. We will also keep track of the index of the front element (it will not necessarily be 0). We will also keep the number of elements in the queue in a separate variable. Since we will not necessarily have items starting at index 0, we can no longer rely on the length of the list for queue size.
 
++ The abstract data type is the ***queue***
+
++ The implementation is a ***fixed-size circular list***
+
++ In praxis, you don't need to implement a linked-list queue yourself → **collections.deque** is built on a linked list
+
+    + **collections.deque:** (pronounced "deck", short for "double-ended queue") a specialized, optimized container in Python for adding and removing elements from both ends with efficient, thread-safe operations
+
 ```python
 class Full(Exception):
     'An exception raised when the queue is full'
