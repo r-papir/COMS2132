@@ -6,27 +6,31 @@ In Python, some basic operations we can do on elements in a data structure (spec
 
 <details>
 <summary>Abstract Data Type</summary>
+<br>
 
 **Abstract Data Type:** defines the data and operations (methods) on the data, like a contract between the data structure and the programmer → we will model abstract data types with *classes*
 </details>
 
 <details>
-
 <summary>DeepCopy (operation)</summary>
+<br>
 
 **DeepCopy:** a built-in function in Python that creates a completely independent clone of an object, including all objects it refers to, recursively
 </details>
 
+<details>
 <summary>NumPy (module)</summary>
+<br>
 
 **NumPy:** a standard package for numeric computing in Python
 
 + The basic data type in is the numpy *n-dimensional* array; these can be used to represent *vectors* (1D), *matrices* (2D), or *tensors* (nD)
 
 Read more about *Shallow and Deep Copy Operations* [**here**](https://docs.python.org/3/library/copy.html).
-</details>
 
+</details>
 <summary>Array (datatype/structure)</summary>
+<br>
 
 **Array:** a linear datatype and structure that stores elements of the *same* datatype in contiguous memory locations
 
