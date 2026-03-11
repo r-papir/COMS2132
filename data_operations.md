@@ -18,6 +18,8 @@ A conceptual model that defines a data type by its behavior and the operations t
 <br>
 
 A built-in function in Python that creates a completely independent clone of an object, including all objects it refers to, recursively
+
++ Read more about *Shallow and Deep Copy Operations* [**here**](https://docs.python.org/3/library/copy.html).
 </details>
 
 <details>
@@ -27,9 +29,6 @@ A built-in function in Python that creates a completely independent clone of an 
 A standard package for numeric computing in Python
 
 + The basic data type in is the numpy *n-dimensional* array; these can be used to represent *vectors* (1D), *matrices* (2D), or *tensors* (nD)
-
-+ Read more about *Shallow and Deep Copy Operations* [**here**](https://docs.python.org/3/library/copy.html).
-
 </details>
 
 <details>
@@ -48,7 +47,7 @@ A linear datatype and structure that stores elements of the *same* datatype in c
 For representing multidimensional data, we would use a *matrix*, but the underlying structure of matrices stores elements in the form of a *referential array*. Naively implementing this can be inefficient or lead to bugs.
 
 <details>
-<summary> The correct way to create a matrix</summary>
+<summary><strong>The correct syntax for creating a matrix:</strong></summary>
 
 ```python
 from copy import deepcopy
@@ -72,8 +71,12 @@ print(matrix)
 ```
 </details>
 
-```python
-li = [1,2,3]
+For collections that are mutable or contain mutable items, a *copy* may be needed so we can change one copy without changing the other.
+
+<details>
+<summary><strong>Using copy methods:</strong></summary>
+
+i = [1,2,3]
 
 # shallow copy
 test = li
@@ -94,7 +97,7 @@ li2 = li[:]
 
 li[0][0] = 0 
 li
-```
+</details>
 
 ### Multidimensional arrays are made much simpler by using the *NumPy* module:
 ```python
