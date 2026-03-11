@@ -1,3 +1,5 @@
+## Notes on Arrays
+
 **Array:** a linear datatype and structure that stores elements of the same data type in contiguous memory locations
 
 **Tuple:** a datatype representing an ordered, immutable (unchangeable) collection of elements
