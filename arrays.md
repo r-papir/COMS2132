@@ -1,4 +1,4 @@
-# Data Structures: Arrays
+# Data Structures: Arrays & Lists
 
 <br>
 
