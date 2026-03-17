@@ -1,5 +1,7 @@
 # Data Structures: Arrays & Lists
 
+Before jumping in, watch this [**4-minute tutorial on linked lists**](https://www.youtube.com/watch?v=F8AbOfQwl1c).
+
 <br>
 
 ## Vocabulary
@@ -132,7 +134,7 @@ class SinglyLinkedList:
         self.size += 1
 ```
 
-Lear more about singly linked lists [**here**](https://www.geeksforgeeks.org/python/singly-linked-list-in-python/).
+Learn more about singly linked lists [**here**](https://www.geeksforgeeks.org/python/singly-linked-list-in-python/).
 
 <br>
 
