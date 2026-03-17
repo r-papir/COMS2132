@@ -42,15 +42,16 @@ Lear more about singly linked lists [**here**](https://www.geeksforgeeks.org/pyt
 In a linked list, we need to keep track of *self.data*, *self.next*, and *self.prev* (for previous data). Our Node class will look like this:
 
 ```python
-# Example 1 (GeeksforGeeks)
+# Example 1
 
 class Node:
-    def __init__(self, data=None):
-        # Data stored in the node
+    def __init__(self, data):
         self.data = data
-        # Reference to the next node in the singly linked list
         self.next = None
+        self.prev = None
 ```
+
+We can also implement a linked list by evaluating each datam in terms of its relation to the *head* or *tail*:
 
 ```python
 # Example 2 (Bauer's class)
