@@ -39,7 +39,7 @@
 
 Lear more about singly linked lists [**here**](https://www.geeksforgeeks.org/python/singly-linked-list-in-python/#what-is-a-singly-linked-list).
 
-In a linked list, we need to keep track of *self.data*, *self.next*, and *self.prev* (for previous data). Our Node class will look like this:
+In a linked list, we need to keep track of *self.data*, *self.next*, and *self.prev* (for previous data). Our **Node class** will look like this:
 
 ```python
 # Example 1
@@ -51,7 +51,7 @@ class Node:
         self.prev = None
 ```
 
-We can also implement a linked list by evaluating each datam in terms of its relation to the *head* or *tail*:
+In addition to keeping track of what comes before and after our current position in the list, we will also keep track of each datam in terms of its relation to the *head* or *tail*. Here is what our main **SinglyLinkedList class** will look like:
 
 ```python
 # Example 2 (Bauer's class)
