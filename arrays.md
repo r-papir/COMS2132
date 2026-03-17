@@ -184,7 +184,7 @@ print(queue.deque()) # expecting: python
 
 ## Doubly Linked Lists
 
-**Sentinels** are ixed empty nodes placed before head and after tail of a linked list in a *doubly linked lists*; these guarantee that every node has a previous node and that every node has a next node, including the head and the tail. You can think of these like 'dummy nodes' because they do not contain any value themselves.
+**Sentinels** are fixed empty nodes placed before head and after tail of a linked list in a *doubly linked lists*; these guarantee that every node has a previous node and that every node has a next node, including the head and the tail. You can think of these like 'dummy nodes' because they do not contain any value themselves.
 
 *Visualization of doubly linked list with sentinels:*
 ![doubly linked list with sentinels](images/doubly-linked-list-sentinels.png)
