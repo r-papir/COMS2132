@@ -37,7 +37,9 @@
 
 ## Singly Linked Lists
 
-Lear more about singly linked lists [**here**](https://www.geeksforgeeks.org/python/singly-linked-list-in-python/#what-is-a-singly-linked-list).  
+Lear more about singly linked lists [**here**](https://www.geeksforgeeks.org/python/singly-linked-list-in-python/#what-is-a-singly-linked-list).
+
+In a linked list, we need to keep track of *self.data*, *self.next*, and *self.prev* (for previous data). Our Node class will look like this:
 
 ```python
 # Example 1 (GeeksforGeeks)
