@@ -53,6 +53,8 @@ class Node:
 
 In addition to keeping track of what comes before and after our current position in the list, we will also keep track of each datam in terms of its relation to the ***head*** (pointer to the first item of the list) or ***tail*** (pointer to the last item of the list). Here is a visulaization of the basic structure for singly linked lists:
 
+![linked list basic structure](images/linked-list.webp)
+
 
 Now, here is what our main **SinglyLinkedList class** will look like:
 
