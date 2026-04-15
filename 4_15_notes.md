@@ -1,5 +1,5 @@
 # Graph Algorithms
-## Class Notes from 4/15/26
+Class Notes from 4/15/26
 
 ### Depth-First Search (DFS)
 
