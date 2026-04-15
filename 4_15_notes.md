@@ -1,9 +1,9 @@
-# Depth-First Search (DFS)
+# Graph Algorithms
 ### Class Notes from 4/15/26
 
-In Python, we can represent a weighted-DFS graph using two methods: a dictionary with tuples, or a nested dictionary.
+### Depth-First Search (DFS)
 
-In a dictionary with tuples, each node would have its weight attached like so:
+Using DFS, we can iterature through a graph using a **stack** implementation (**L**ast-**I**n-**F**irst-**O**ut). In Python, we can represent a weighted-DFS graph using two methods: a dictionary with tuples, or a nested dictionary. In a dictionary with tuples, each node would have its weight attached like so:
 
 ```python
 graph = {'A': ['(B,3)'], 
@@ -25,5 +25,7 @@ graph = {'A': {'B':1},
          'F': {'E':1}
         }
 ```
+
+
 
 <!-- to check if a vertice is strongly connected in DFS, you would run a DFS search over and over again, starting from every single vertice until you find any vertice that is unaccessible from a given starting point -->
