@@ -7,7 +7,7 @@ In a dictionary with tuples, each node would have its weight attached like so:
 
 ```python
 graph = {'A': ['(B,3)'], 
-         'B': ['(C, 2'],
+         'B': ['(C,2)'],
        # and so on...
         }
 ```
