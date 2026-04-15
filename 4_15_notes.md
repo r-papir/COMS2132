@@ -3,7 +3,7 @@ Class Notes from 4/15/26
 
 ### Depth-First Search (DFS)
 
-Using DFS, we can iterature through a graph using a **stack** implementation (**L**ast-**I**n-**F**irst-**O**ut). In Python, we can represent a weighted-DFS graph using two methods: a *dictionary with tuples*, or a *nested dictionary*. In a dictionary with tuples, each node would have its weight attached like so:
+Using DFS, we can iterature through a graph using a **stack** implementation (**L**ast-**I**n-**F**irst-**O**ut). In Python, we can represent a weighted-DFS graph using two methods: a *dictionary with tuples*, or a *nested dictionary*. In a **dictionary with tuples**, each node would have its weight attached like so:
 
 ```python
 graph = {'A': ['(B,3)'], 
