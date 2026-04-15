@@ -12,12 +12,16 @@ graph = {'A': ['(B,3)'],
         }
 ```
 
-+ 
+However, the runtime for sorting to find an edge case (or to identify the cost of the edge) in the above data structure would be **O(n)** (linear).
 
-+ 
-+
-+
-+
-+ Running time for find an edge case or the cost of the edge through a dictionary with weights stored in the form of tuples within a dictionary would be O(n) (linear), but sorting through a nested dictionary would be a must faster, O(1) (constant) runtime
+We can also represent a weighted-DFS graph in a **nested dictionary** as shown below, also known as an ***adjacency list representation***:
 
-In python, the dictionary method would be called an “adjacency list” representation
+```python
+graph = {'A': {'B':1}, 
+         'B': {'C':1},
+         'C': {'A':1,'D':1},
+         'D': {'F':1},
+         'E': {'C':1},
+         'F': {'E':1}
+        }
+```
