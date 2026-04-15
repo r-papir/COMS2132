@@ -6,8 +6,10 @@ In Python, we can represent a weighted-DFS graph using two methods: a dictionary
 In a dictionary with tuples, each node would have its weight attached like so:
 
 ```python
-
-print("hello world")
+graph = {'A': ['(B,3)'], 
+         'B': ['(C, 2'],
+       # and so on...
+        }
 ```
 
 + 
