@@ -25,3 +25,5 @@ graph = {'A': {'B':1},
          'F': {'E':1}
         }
 ```
+
+<!-- to check if a vertice is strongly connected in DFS, you would run a DFS search over and over again, starting from every single vertice until you find any vertice that is unaccessible from a given starting point -->
