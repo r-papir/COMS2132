@@ -35,8 +35,7 @@ Like a stack or queue, the *Priority Queue* abstract data type has a pair of met
 
 <ins>Example 1:</ins> Gawain, Percivale, and Galahad arrive at a lunch buffet, waiting in line. They are all equally important (priority 10).
 
-![King Arthur's Round Table]([URL](https://en.wikipedia.org/wiki/Round_Table#/media/File:Holy-grail-round-table-ms-fr-112-3-f5r-1470-detail.jpg))
-
+<p><a href="https://commons.wikimedia.org/wiki/File:Holy-grail-round-table-ms-fr-112-3-f5r-1470-detail.jpg#/media/File:Holy-grail-round-table-ms-fr-112-3-f5r-1470-detail.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Holy-grail-round-table-ms-fr-112-3-f5r-1470-detail.jpg" alt="Holy-grail-round-table-ms-fr-112-3-f5r-1470-detail.jpg" height="332" width="354"></a><br><em>By <a href="https://en.wikipedia.org/wiki/Evrard_d%27Espinques" class="extiw" title="w:Evrard d'Espinques">Evrard d'Espinques</a> - <a rel="nofollow" class="external text" href="http://gallica.bnf.fr/ark:/12148/btv1b8527589h/f13.item">Gallica</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=24915213">Link</a></p></em>
 
 ```python
 pq = SomePriorityQueue()
