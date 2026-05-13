@@ -77,7 +77,7 @@ Store the items in a list, simply append on insert, and search for minimum durin
 | find_min()  | O(n)  |
 | remove_min()  | O(n)  |
 
-Now, try looking for these operations in the program below. Can you find them?
+Try looking for these operations in the program below. Can you find them?
 ```python
 class UnsortedPriorityQueue:
 
