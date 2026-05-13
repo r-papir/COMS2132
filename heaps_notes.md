@@ -69,7 +69,7 @@ Now King Arthur is served, followed by Sir Lancelot, and then Sir Galahad.
 The priority queue may also have a `find_min()` method to retrieve but not remove the smallest element, and a `len()` method to retrieve the number of elements in the priority queue. There are many other use cases for priority queues, such as process managment on a CPU, or prioritizing network packages by importance.
 
 ### Implementing a Priority Queue using an Unsorted List
-Store the items in a list, simply append on insert, and search for minimum during lookup. Look for these operations in the program below:
+Store the items in a list, simply append on insert, and search for minimum during lookup.
 
 | Operation | Runtime |
 | :-------: | :------: |
@@ -77,6 +77,7 @@ Store the items in a list, simply append on insert, and search for minimum durin
 | find_min()  | O(n)  |
 | remove_min()  | O(n)  |
 
+Now, try looking for these operations in the program below. Can you find them?
 ```python
 class UnsortedPriorityQueue:
 
