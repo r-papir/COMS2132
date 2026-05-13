@@ -6,7 +6,7 @@ Stacks and queues are sequence data types that allow interaction only at the end
 ### Stacks
 Stacks can be implemented using a linked list or an array list. Example applications include processing nested structures, recursion, depth-first tree traversals, etc.
 
-**Element Processing Order:** *Last-In-First-Out* (LIFO)
+**Processing Order:** *Last-In-First-Out* (LIFO)
 
 | Operation | How it works |
 | :-------: | :------  |
@@ -19,7 +19,7 @@ Stacks can be implemented using a linked list or an array list. Example applicat
  ### Queues
 Queues can be implemented using a doubly linked list or a circular array (or using two stacks). Example applications include keeping track of to-do lists, simulations, breadth-first (layer-order) tree traversals, etc.
 
-**Element Processing Order:** *First-In-First-Out* (FIFO)
+**Processing Order:** *First-In-First-Out* (FIFO)
 | Operation | How it works |
 | :-------: | :------  |
 | enqueue(x)|add x at the end of the queue|
