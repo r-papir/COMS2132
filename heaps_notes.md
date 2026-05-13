@@ -35,7 +35,7 @@ Like a stack or queue, the *Priority Queue* abstract data type has a pair of met
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Holy-grail-round-table-ms-fr-112-3-f5r-1470-detail.jpg#/media/File:Holy-grail-round-table-ms-fr-112-3-f5r-1470-detail.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Holy-grail-round-table-ms-fr-112-3-f5r-1470-detail.jpg" alt="Holy-grail-round-table-ms-fr-112-3-f5r-1470-detail.jpg" height="332" width="354"></a><br><em>By <a href="https://en.wikipedia.org/wiki/Evrard_d%27Espinques" class="extiw" title="w:Evrard d'Espinques">Evrard d'Espinques</a> - <a rel="nofollow" class="external text" href="http://gallica.bnf.fr/ark:/12148/btv1b8527589h/f13.item">Gallica</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=24915213">Link</a></p></em>
 
-<ins>Example 1:</ins> Gawain, Percivale, and Galahad arrive at a lunch buffet, waiting in line. They are all equally important (priority 10).
+<ins> **Example 1:** </ins> Gawain, Percivale, and Galahad arrive at a lunch buffet, waiting in line. They are all equally important (priority 10).
 ```python
 pq = SomePriorityQueue()   # create the priority queue
 pq.insert((10,"Gawain"))   # insert Sir Gawain, with a priority of 10
@@ -138,6 +138,7 @@ If you evaluate the Boolean `item2 < item1`, what will the output be?
 </details>
 
 <ins>**Video:** Priority Queues in 5 Minutes</ins>
+
 [![Priority Queues in 5 Minutes](https://img.youtube.com/vi/7z_HXFZqXqc/0.jpg)](https://www.youtube.com/watch?v=7z_HXFZqXqc)
 
 
