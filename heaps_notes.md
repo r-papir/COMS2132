@@ -33,15 +33,14 @@ Queues can be implemented using a doubly linked list or a circular array (or usi
 
 Like a stack or queue, the *Priority Queue* abstract data type has a pair of methods for inserting and retrieving elements, called `insert` and `remove_min`. In a priority queue, each element has an associated priority when inserted into the data structure. We can represent an element with its priority as a *(key,value)* pair, where the key is the priority (but note that, unlike maps, priority queues can generally contain multiple values with the same key).
 
-<ins>Example 1:</ins> Gawain, Percivale, and Galahad arrive at a lunch buffet, waiting in line. They are all equally important (priority 10).
-
 <p><a href="https://commons.wikimedia.org/wiki/File:Holy-grail-round-table-ms-fr-112-3-f5r-1470-detail.jpg#/media/File:Holy-grail-round-table-ms-fr-112-3-f5r-1470-detail.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Holy-grail-round-table-ms-fr-112-3-f5r-1470-detail.jpg" alt="Holy-grail-round-table-ms-fr-112-3-f5r-1470-detail.jpg" height="332" width="354"></a><br><em>By <a href="https://en.wikipedia.org/wiki/Evrard_d%27Espinques" class="extiw" title="w:Evrard d'Espinques">Evrard d'Espinques</a> - <a rel="nofollow" class="external text" href="http://gallica.bnf.fr/ark:/12148/btv1b8527589h/f13.item">Gallica</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=24915213">Link</a></p></em>
 
+<ins>Example 1:</ins> Gawain, Percivale, and Galahad arrive at a lunch buffet, waiting in line. They are all equally important (priority 10).
 ```python
-pq = SomePriorityQueue()
-pq.insert((10,"Gawain"))
-pq.insert((10,"Percivale"))
-pq.insert((10,"Galahad"))
+pq = SomePriorityQueue()   # create the priority queue
+pq.insert((10,"Gawain"))   # insert Sir Gawain, with a priority of 10
+pq.insert((10,"Percivale"))   # insert Sir Percivale, with a priority of 10
+pq.insert((10,"Galahad"))    # insert Sir Galahad, with a priority of 10
 ```
 They are served in *first-come-first-serve* order before they sit down at the round table.
 
@@ -55,12 +54,12 @@ All of a sudden, King Arthur walks in and cuts the line (because he is King, so 
 ```python
 pq.insert((1,"Arthur"))
 ```
-Before Arthur is served, Lancelot arrives (arguably the most important one of the knights, after the king).
+Before King Arthur is served, Sir Lancelot arrives (arguably the most important one of the knights, after the king).
 
 ```python
 pq.insert((5,"Lancelot"))
 ```
-Now Arthur is served, followed by Lancelot, and Galahad.
+Now King Arthur is served, followed by Sir Lancelot, and then Sir Galahad.
 
 ```python
 (k,v) = pq.remove_min()  # this removes and returns (1,Arthur)
@@ -72,11 +71,11 @@ The priority queue may also have a `find_min()` method to retrieve but not remov
 ### Implementing a Priority Queue using an Unsorted List
 Store the items in a list, simply append on insert, and search for minimum during lookup. Look for these operations in the program below:
 
-| Operation | Runtime | How it works |
-| :-------: | :------: | :------- |
-| insert()  | O(1) amortized | __    |
-| find_min()  | O(n)  | __  |
-| remove_min()  | O(n)  | __  |
+| Operation | Runtime |
+| :-------: | :------: |
+| insert()  | O(1) amortized |
+| find_min()  | O(n)  |
+| remove_min()  | O(n)  |
 
 ```python
 class UnsortedPriorityQueue:
@@ -139,7 +138,6 @@ If you evaluate the Boolean `item2 < item1`, what will the output be?
 
 ### Video: Priority Queues in 5 Minutes
 [![Priority Queues in 5 Minutes](https://img.youtube.com/vi/7z_HXFZqXqc/0.jpg)](https://www.youtube.com/watch?v=7z_HXFZqXqc)
-
 
 
 
