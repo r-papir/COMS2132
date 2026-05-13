@@ -70,7 +70,13 @@ Now Arthur is served, followed by Lancelot, and Galahad.
 The priority queue may also have a `find_min()` method to retrieve but not remove the smallest element, and a `len()` method to retrieve the number of elements in the priority queue. There are many other use cases for priority queues, such as process managment on a CPU, or prioritizing network packages by importance.
 
 ### Implementing a Priority Queue using an Unsorted List
-Store the items in a list, simply append on insert, and search for minimum during lookup.
+Store the items in a list, simply append on insert, and search for minimum during lookup. Look for these operations in the program below:
+
+| Operation | Runtime | How it works |
+| :-------: | :------: | :------- |
+| insert()  | O(1) amortized | __    |
+| find_min()  | O(n)  | __  |
+| remove_min()  | O(n)  | __  |
 
 ```python
 class UnsortedPriorityQueue:
@@ -119,21 +125,29 @@ class UnsortedPriorityQueue:
         del self._data[current_smallest_index]
         return current_smallest_item
 ```
-
-Given the following input:
+**Practice:** Given the following input:
 
 ```python
 item1 = UnsortedPriorityQueue._Item(10,"Gallahad")
 item2 = UnsortedPriorityQueue._Item(5, "Lancelot")
 ```
-
 If you evaluate the Boolean `item2 < item1`, what will the output be?
 <details>
   <summary>Answer</summary>
   True
 </details>
 
-### Video: Priority Queues Explained
-[![Priority Queues Explained](https://img.youtube.com/vi/_U1AJZQxYTU/0.jpg)](https://www.youtube.com/watch?v=_U1AJZQxYTU)
+### Video: Priority Queues in 5 Minutes
+[![Priority Queues in 5 Minutes](https://img.youtube.com/vi/7z_HXFZqXqc/0.jpg)](https://www.youtube.com/watch?v=7z_HXFZqXqc)
+
+
+
+
+
+### Video: Heaps in 3 Minutes
+[![Heaps in 3 Minutes](https://img.youtube.com/vi/0wPlzMU-k00/0.jpg)](https://www.youtube.com/watch?v=0wPlzMU-k00)
+
+
+<!-- [![Alt text for image](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID) -->
 
 
