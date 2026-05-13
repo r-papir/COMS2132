@@ -35,6 +35,9 @@ Like a stack or queue, the *Priority Queue* abstract data type has a pair of met
 
 <ins>Example 1:</ins> Gawain, Percivale, and Galahad arrive at a lunch buffet, waiting in line. They are all equally important (priority 10).
 
+![King Arthur's Round Table]([URL](https://en.wikipedia.org/wiki/Round_Table#/media/File:Holy-grail-round-table-ms-fr-112-3-f5r-1470-detail.jpg))
+
+
 ```python
 pq = SomePriorityQueue()
 pq.insert((10,"Gawain"))
