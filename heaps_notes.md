@@ -125,10 +125,10 @@ item1 = UnsortedPriorityQueue._Item(10,"Gallahad")
 item2 = UnsortedPriorityQueue._Item(5, "Lancelot")
 ```
 
-If you evaluate the Boolean `item2 < item1`, what will the output be, and why?
+If you evaluate the Boolean `item2 < item1`, what will the output be?
 <details>
   <summary>Answer</summary>
-  True, because
+  True
 </details>
 
 ### Video: Priority Queues Explained
