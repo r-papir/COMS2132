@@ -131,7 +131,7 @@ If you evaluate the Boolean `item2 < item1`, what will the output be, and why?
   True, because
 </details>
 
-### Video Tutorial
+### Video: Priority Queues Explained
 [![Priority Queues Explained](https://img.youtube.com/vi/_U1AJZQxYTU/0.jpg)](https://www.youtube.com/watch?v=_U1AJZQxYTU)
 
 
