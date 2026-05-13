@@ -1,4 +1,4 @@
-# Data Structures: Priority Queues & Heaps
+# Priority Queues & Heaps
 
 ## Overview: Stacks & Queues
 Stacks and queues are sequence data types that allow interaction only at the end of the sequence. Operations should be implemented in ***O(1)***.
