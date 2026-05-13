@@ -137,7 +137,7 @@ If you evaluate the Boolean `item2 < item1`, what will the output be?
   True
 </details>
 
-<ins>**Video:** Priority Queues in 5 Minutes</ins>
+**Video:** *Priority Queues in 5 Minutes*
 
 [![Priority Queues in 5 Minutes](https://img.youtube.com/vi/7z_HXFZqXqc/0.jpg)](https://www.youtube.com/watch?v=7z_HXFZqXqc)
 
