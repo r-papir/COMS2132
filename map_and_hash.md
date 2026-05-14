@@ -10,7 +10,7 @@
 ### Hash Tables
 + **Dictionary:** a generic structure for mapping key values
 + **Hash Table:** implementation of a dictionary using a *hash function*
-+ **Runtime per hash operation:**
++ **Runtime per hash operation:** (below)
   
 <img width="474" height="239" alt="table-10 2" src="https://github.com/user-attachments/assets/92fa93b4-a3f9-492a-8d0a-ce6d81ae5a49" />
 
