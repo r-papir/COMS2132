@@ -136,7 +136,7 @@ If you evaluate the Boolean `item2 < item1`, what will the output be?
   <summary>Answer</summary>
   True
 </details>
-
+<br>
 
 **Video 1 (left):** *Priority Queues in 8 Minutes* (Optional)
 
