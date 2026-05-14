@@ -31,7 +31,7 @@ In computer science, a tree is an abstract model of a hierarchical structure. A 
 
 <img width="935" height="555" alt="tree-linked" src="https://github.com/user-attachments/assets/b35b47b6-b8de-4385-9411-5a0362233bca" />
 
-**Maniuplating and Updating a Tree Structure:** **The following operations have a runtime of O(1)*
+**Maniuplating and Updating a Tree Structure:** **The following operations have a runtime of O(1).*
 |  Operation | How it works  |
 | :---: | :--- |
 | add_root(e) | create a root for an empty tree |
