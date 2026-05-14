@@ -1,5 +1,36 @@
 '''Building & Traversing a Binary Tree'''
 
+class ArrayQueue(object):
+    '''A queue backed with a built-in Python list'''
+
+    def __init__(self):
+        # Creates an empty ArrayQueue instance      
+        self.queue = []
+
+    def enqueue(self, element):
+    # Enqueue element at the back of the queue
+        self.queue.append(element)
+
+    def dequeue(self):
+        # Dequeue the element from the front of the queue
+        # Raise an exception if the queue is empty
+        if len(self.queue) == 0:
+            raise IndexError("Queue is empty!")
+        return self.queue.pop(0)
+        
+    def is_empty(self):
+        return len(self.queue) == 0
+
+    def peek(self):
+        if len(self.queue) == 0:
+            raise IndexError("Queue is empty!")
+        else:
+            return self.queue[0].value
+        
+    def __len__(self):
+    # Return the length of the queue
+        return len(self.queue)
+
 class Node(object):
     def __init__(self, value):  # initializer always comes first!
         self.value = value      # assigns whatever is passed into the class variable to 'value'
@@ -17,6 +48,8 @@ class BinaryTree(object):
             return self.inorder_print(tree.root, "")
         elif traversal_type == "postorder":
             return self.postorder_print(tree.root, "")
+        elif traversal_type == "breadth-first":
+            return self.breadth_first_print(tree.root)
         else:
             print("Traversal Type " + str(traversal_type) + " is not supported.")
 
@@ -44,6 +77,24 @@ class BinaryTree(object):
             traversal_string = self.postorder_print(starting_node.right, traversal_string)
             traversal_string += (str(starting_node.value) + "→")    # wherever you place the counter denotes which order the root will be traversed
         return traversal_string
+    
+    def breadth_first_print(self, starting_node):
+        if starting_node is None:
+            return
+        
+        queue = ArrayQueue()
+        queue.enqueue(starting_node)
+        traversal_string = " "
+
+        while len(queue) > 0:
+            traversal_string += str(queue.peek()) + "→"     # parentheses must not include → because the peek() operation is dealing with the data itself, not just the string!
+            node = queue.dequeue()
+            if node.left:
+                queue.enqueue(node.left)
+            if node.right:
+                queue.enqueue(node.right)
+        return traversal_string
+
 
 tree = BinaryTree(1)  # sets the initial value of the tree to 1, which becomes the root
 tree.root.left = Node(2)  # sets the initial value of the tree to 1, which becomes the root
@@ -86,6 +137,10 @@ def user_select():
         elif selection == "C" or selection == "c":
             print(" ")
             print(tree.print_tree("postorder"))
+            print(" ")
+        elif selection == "D" or selection == "d":
+            print(" ")
+            print(tree.print_tree("breadth-first"))
             print(" ")
         elif selection == "E" or selection == "e":
             print("Goodbye.")
