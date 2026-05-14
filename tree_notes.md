@@ -22,12 +22,12 @@ In computer science, a tree is an abstract model of a hierarchical structure. A 
 + If the order among the children is important, we call it an *ordered* tree.
 
 
-## §1: Video Lession
+## Video Lession
 
 [![Binary Search](https://img.youtube.com/vi/9nmrkG6QtpQ/0.jpg)](https://www.youtube.com/watch?v=9nmrkG6QtpQ)
 [![Binary Trees](https://img.youtube.com/vi/EPwWrs8OtfI/0.jpg)](https://www.youtube.com/watch?v=EPwWrs8OtfI)
 
-### Building a Binary Tree
+### §1: Building a Binary Tree
 ```python
 class Node(object):
     def __init__(self, value):    # init constructer always comes first!
@@ -44,7 +44,7 @@ class BinaryTree(object):
 tree = BinaryTree(1)    # sets the initial value of the tree to 1, which becomes the root
 tree.root.left = Node(2)    # sets the left node (child) of the root to 2
 tree.root.right = Node(3)    # sets the right node (child) of the root to 3
-tree.root.left.left = Node(4)
+tree.root.left.left = Node(4)    # and so on...
 tree.root.left.right = Node(5)
 tree.root.right.light = Node(6)
 tree.root.right.right = Node(7)
@@ -57,6 +57,19 @@ tree.root.right.right = Node(7)
 #    /  \     /  \
 #   4    5   6    7
 ```
+
+### §3: Traversing a Binary Tree
+How do we use and move through trees? In this section, we will discuss selected tree traversal algorithms, i.e., algorithms that systematically access (or visit) all positions in a tree. The algorithm will perform some action for each visited position as part of the visit. These actions could involve simple or complex computations, depending on the application.
+
+There are several systematic ways of visiting all positions of a tree:
++ **Preorder:** the position is visited first, followed by recursive visits to all its children
++ **Postorder:** the children of a node are visited before the node itself is visited
++ **Inorder:** a subset of children is visited first, then the position itself, and then the rest of the children. Inorder traversal is mostly applicable to binary trees.
++ **Breadth-First:** The positions are visited according to their depth (root first, then all nodes at depth 1, then all nodes at depth 2, and so on)
+
+
+
+
 
 
 ### Linked Trees
