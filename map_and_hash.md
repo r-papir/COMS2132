@@ -2,23 +2,30 @@
 
 **Youtube Courses:**
 
-- [ ] *Hash Tables in 4 Minutes*
+- [ ] *Hash Maps in Python*
 - [ ] *How Hash Tables Actually Work?*
-- [ ] Finish Markdown guide
+- [ ] *Hash  Tables, Sets, and Maps*
+- [ ] ...
 
-## Hash Tables
+### Hash Tables
+**Dictionary:** a generic structure for mapping key values
+**Hash Table:** implementation of a dictionary using a *hash function*
 <img width="474" height="239" alt="table-10 2" src="https://github.com/user-attachments/assets/92fa93b4-a3f9-492a-8d0a-ce6d81ae5a49" />
 
-[![Hash Tables in 4 Minutes](https://img.youtube.com/vi/knV86FlSXJ8/0.jpg)](https://www.youtube.com/watch?v=knV86FlSXJ8)
+[![Hash Maps in Python](https://img.youtube.com/vi/RcZsTI5h0kg/0.jpg)](https://www.youtube.com/watch?v=RcZsTI5h0kg)
 [![How Hash Tables Actually Work](https://img.youtube.com/vi/0Xv6wSguIlQ/0.jpg)](https://www.youtube.com/watch?v=0Xv6wSguIlQ)
+[![Hash Tables, Sets, and Maps](https://img.youtube.com/vi/iZyxNEBpqFY/0.jpg)](https://www.youtube.com/watch?v=iZyxNEBpqFY)
+
+
 
 
 ## Maps
 
-| Operation | How it works |
-| :---: | :--- |
-| Left-aligned | Center-aligned |
-| Row 2 | Data |
+| Operation | Runtime (Avg.; Worst) | How it works |
+| :---: | :--- |  :--- |
+| insert | O(1); O(n)  | |
+| delete | Data | |
+| search | Data | |
 
 Map Abstract Data Type (ADT) should support all the behaviors that Python's built-in dict class supports. The most significant five methods/behaviors are:
 
