@@ -68,8 +68,41 @@ There are several systematic ways of visiting all positions of a tree:
 + **Breadth-First:** The positions are visited according to their depth (root first, then all nodes at depth 1, then all nodes at depth 2, and so on)
 
 
+**<ins>Preorder Traversal</ins> (DFS)**
+
+**<ins>Postorder Traversal</ins> (DFS)**
+
+**<ins>Inorder Traversal</ins> (DFS)**
+We can store this [word list](https://github.com/r-papir/my_games/blob/main/wordle.txt) in a binary tree structure like this:
+
+```python
+# Write the _insert_below and insert method and insert them in the AbstractBinaryTree class
+
+def _insert_below(self, p, e):
+    if e < p.element():
+        if self.left(p):
+            self._insert_below(self.left(p), e)
+        else:
+            self._add_left(p, e)
+    else:
+        if self.right(p):
+            self._insert_below(self.right(p), e)
+        else:
+            self._add_right(p, e)
+
+def insert(self, e):
+    if self.is_empty():
+        self._add_root(e)
+    else:
+        self._insert_below(tree.root(), e)
+
+AbstractBinaryTree._insert_below = _insert_below
+AbstractBinaryTree.insert = insert
+```
 
 
+
+**<ins>Breadth-First Traversal</ins> (BFS)**
 
 
 ### Linked Trees
