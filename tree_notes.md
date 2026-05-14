@@ -92,39 +92,6 @@ INORDER: A → B → C → D → E → F → G → H → I
 
 **Test out the different traversal methods [here](https://github.com/r-papir/COMS2132/blob/main/tree_traversal.py)**.
 
-
-We can store this [word list](https://github.com/r-papir/my_games/blob/main/wordle.txt) in a binary tree structure like this:
-
-```python
-# Write the _insert_below and insert method and insert them in the AbstractBinaryTree class
-
-def _insert_below(self, p, e):
-    if e < p.element():
-        if self.left(p):
-            self._insert_below(self.left(p), e)
-        else:
-            self._add_left(p, e)
-    else:
-        if self.right(p):
-            self._insert_below(self.right(p), e)
-        else:
-            self._add_right(p, e)
-
-def insert(self, e):
-    if self.is_empty():
-        self._add_root(e)
-    else:
-        self._insert_below(tree.root(), e)
-
-AbstractBinaryTree._insert_below = _insert_below
-AbstractBinaryTree.insert = insert
-```
-
-
-**<ins>Postorder Traversal</ins> (DFS)**
-
-
-
 **<ins>Breadth-First Traversal</ins> (BFS)**
 
 
