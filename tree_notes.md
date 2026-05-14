@@ -104,8 +104,6 @@ ___
 
 **PRACTICE QUESTION:** Write the nodes in *postorder*, with an arrow between each node indicating the directon of traversal (as shown above).
 
-**PRACTICE PROGRAM:** Test out the different traversal methods **[here](https://github.com/r-papir/COMS2132/blob/main/tree_traversal.py)**.
-
 ___
 
 **<ins>Breadth-First Traversal</ins> (BFS)**
@@ -116,9 +114,11 @@ This method traverses a tree in *level order*. In order to implement this, we ne
 3. **Dequeue()** the current node and then **peek()** at the left and right children of the current node.
 4. **Enqueue()** the left child, and then the right child to the front of the queue.
 5. Enqueue, peek, and deqeue each node in this order, traversing the entire queue with a `while` loop.
+<br>
+
+**PRACTICE PROGRAM:** Test out all the different traversal methods **[here](https://github.com/r-papir/COMS2132/blob/main/tree_traversal.py)**.
 
 ---
-
 
 ### Linked Trees
 
