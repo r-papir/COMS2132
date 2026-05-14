@@ -4,7 +4,8 @@ In computer science, a tree is an abstract model of a hierarchical structure. A 
 **Important Terminology:**
 
 
-<img width="501" height="408" alt="tree" src="https://github.com/user-attachments/assets/466e2e46-38e9-430d-82c0-eeba66fbe2de" /> |   |   |   |
+<img width="501" height="408" alt="tree" src="https://github.com/user-attachments/assets/466e2e46-38e9-430d-82c0-eeba66fbe2de" /> 
+|   |   |   |
 | :---: | :---: | :---: |
 | child | parent | root |
 | leaves | ancestor | descendant |
