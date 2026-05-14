@@ -8,7 +8,7 @@ In computer science, a tree is an abstract model of a hierarchical structure. A 
 | :---: | :---: | :---: |
 | child | parent | root |
 | leaves | ancestor | descendant |
-| Subtree | depth | height | 
+| subtree | depth | height | 
 
 
 + Tree *T* (above) is a set of nodes storing elements that have a **parent-child** relationship.
