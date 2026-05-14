@@ -151,7 +151,7 @@ ___
 
 Instead of a list, we can store the items (with their priorities) in a *binary heap*. The heap guarantess ***O(log n)*** insertion time and ***O(log n)*** runtime for find_min / remove_min. It stores the items in a complete binary tree, stored in an array. A binary heap is a complete binary tree in which the keys stored in the nodes satisfy the heap order property:
 
-**<ins>Recall:</ins>**
+**<ins>Recall that...</ins>**
 + In a complete binary tree with height *h*, levels 0, 1, 2, ..., *h*-1 have the maximum number of nodes.
 + On level *h*, all nodes are in the leftmost possible position at that level.
 + A complete binary tree can be stored in an array (with the root at index 1, and index 0 left empty).
