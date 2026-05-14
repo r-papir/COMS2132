@@ -3,6 +3,15 @@
 **Youtube Courses:**
 
 
+
+label {
+  padding-left: 5px;
+}
+
+input {
+  float: left;
+}
+
 <div>
   <input type="checkbox" name="uchk">
   <label for="uchk">Unchecked.</label>
