@@ -5,7 +5,7 @@
 - [ ] *How Hash Tables Actually Work?*
 - [ ] *Hash Maps in Python*
 - [ ] *Hash  Tables, Sets, and Maps*
-- [ ] ...
+- [ ] *[Introduction to Hashing](https://www.geeksforgeeks.org/dsa/introduction-to-hashing-2/)*
 
 ### Hash Tables
 **Dictionary:** a generic structure for mapping key values
