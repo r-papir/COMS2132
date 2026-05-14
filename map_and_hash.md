@@ -1,17 +1,17 @@
 # Maps, Hash Functions, and Hash Tables
 
-**Tutorials & Courses:**
-
-- [ ] *How Hash Tables Actually Work?*
-- [ ] *Hash Maps in Python*
-- [ ] *Hash  Tables, Sets, and Maps*
-- [ ] *[Introduction to Hashing](https://www.geeksforgeeks.org/dsa/introduction-to-hashing-2/)*
-
 ### Hash Tables
 + **Dictionary:** a generic structure for mapping key values
 + **Hash Table:** implementation of a dictionary using a *hash function*
 + **Runtime per hash operation:** (below)
 <img width="474" height="239" alt="table-10 2" src="https://github.com/user-attachments/assets/92fa93b4-a3f9-492a-8d0a-ce6d81ae5a49" />
+
+## Tutorials & Courses
+
+- [ ] *How Hash Tables Actually Work?*
+- [ ] *Hash Maps in Python*
+- [ ] *Hash  Tables, Sets, and Maps*
+- [ ] *[Introduction to Hashing](https://www.geeksforgeeks.org/dsa/introduction-to-hashing-2/)*
 
 [![How Hash Tables Actually Work](https://img.youtube.com/vi/0Xv6wSguIlQ/0.jpg)](https://www.youtube.com/watch?v=0Xv6wSguIlQ)
 [![Hash Maps in Python](https://img.youtube.com/vi/RcZsTI5h0kg/0.jpg)](https://www.youtube.com/watch?v=RcZsTI5h0kg)
