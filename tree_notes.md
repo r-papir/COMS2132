@@ -15,11 +15,8 @@ In computer science, a tree is an abstract model of a hierarchical structure. A 
 + The first (or 'highest') node in a tree is called the **root**. In the image above, the root is *A*.
 + Children of the same parent are **siblings**, and all *internal* nodes have at least one child.
 + Nodes that have no children are called **leaves** (also *external*).
-+ A **subtree** at *C* is the tree of all the descendants of *C* in the tree (including *C* itself)
-
-
-
-
++ A **subtree** at *C* is the tree of all the descendants of *C* in the tree (including *C* itself).
+<br>
 
 **§1:** Video Lession
 
