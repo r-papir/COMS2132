@@ -18,7 +18,7 @@ In computer science, a tree is an abstract model of a hierarchical structure. A 
 + A **subtree** at *C* is the tree of all the descendants of *C* in the tree (including *C* itself).
 <br>
 
-**§1:** Video Lession
+### §1: Video Lession
 
 [![Binary Search](https://img.youtube.com/vi/9nmrkG6QtpQ/0.jpg)](https://www.youtube.com/watch?v=9nmrkG6QtpQ)
 [![Binary Trees](https://img.youtube.com/vi/EPwWrs8OtfI/0.jpg)](https://www.youtube.com/watch?v=EPwWrs8OtfI)
