@@ -2,8 +2,8 @@
 
 **Youtube Courses:**
 
-- [ ] *Hash Maps in Python*
 - [ ] *How Hash Tables Actually Work?*
+- [ ] *Hash Maps in Python*
 - [ ] *Hash  Tables, Sets, and Maps*
 - [ ] ...
 
@@ -12,8 +12,8 @@
 **Hash Table:** implementation of a dictionary using a *hash function*
 <img width="474" height="239" alt="table-10 2" src="https://github.com/user-attachments/assets/92fa93b4-a3f9-492a-8d0a-ce6d81ae5a49" />
 
-[![Hash Maps in Python](https://img.youtube.com/vi/RcZsTI5h0kg/0.jpg)](https://www.youtube.com/watch?v=RcZsTI5h0kg)
 [![How Hash Tables Actually Work](https://img.youtube.com/vi/0Xv6wSguIlQ/0.jpg)](https://www.youtube.com/watch?v=0Xv6wSguIlQ)
+[![Hash Maps in Python](https://img.youtube.com/vi/RcZsTI5h0kg/0.jpg)](https://www.youtube.com/watch?v=RcZsTI5h0kg)
 [![Hash Tables, Sets, and Maps](https://img.youtube.com/vi/iZyxNEBpqFY/0.jpg)](https://www.youtube.com/watch?v=iZyxNEBpqFY)
 
 
