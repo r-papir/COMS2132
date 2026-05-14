@@ -58,7 +58,7 @@ tree.root.right.right = Node(7)
 #   4    5   6    7
 ```
 
-### §3: Traversing a Binary Tree
+### §2: Traversing a Binary Tree
 How do we use and move through trees? In this section, we will discuss selected tree traversal algorithms, i.e., algorithms that systematically access (or visit) all positions in a tree. The algorithm will perform some action for each visited position as part of the visit. These actions could involve simple or complex computations, depending on the application.
 
 There are several systematic ways of visiting all positions of a tree:
