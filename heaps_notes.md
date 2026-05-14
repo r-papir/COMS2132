@@ -145,7 +145,19 @@ If you evaluate the Boolean `item2 < item1`, what will the output be?
 [![Priority Queues in 8 Minutes](https://img.youtube.com/vi/wRvOzgt2ygs/0.jpg)](https://www.youtube.com/watch?v=wRvOzgt2ygs) [![Priority Queues to Heaps](https://img.youtube.com/vi/yntfI_jqNms/0.jpg)](https://www.youtube.com/watch?v=yntfI_jqNms)
 
 
+___
 
+## Binary Heaps
+
+Instead of a list, we can store the items (with their priorities) in a *binary heap*. The heap guarantess ***O(log n)*** insertion time and ***O(log n)*** runtime for find_min / remove_min. It stores the items in a complete binary tree, stored in an array. A binary heap is a complete binary tree in which the keys stored in the nodes satisfy the heap order property:
+
+**<ins>Recall:</ins>**
++ In a complete binary tree with height *h*, levels 0, 1, 2, ..., *h*-1 have the maximum number of nodes.
++ On level *h*, all nodes are in the leftmost possible position at that level.
++ A complete binary tree can be stored in an array (with the root at index 1, and index 0 left empty).
++ For a node at position *i* (other than the root), its parent is in position ***i*//2**.
++ For a node at position *i*, its left child is in position **2*i*** and its right child in position **2*i*+1**.
++ For every node *p* other than the root, the key stored at *p* is greater than or equal to the key stored at *p*'s parents.
 
 
 
