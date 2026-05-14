@@ -44,12 +44,16 @@ class BinaryTree(object):
 tree = BinaryTree(1)    # sets the initial value of the tree to 1, which becomes the root
 tree.root.left = Node(2)    # sets the left node (child) of the root to 2
 tree.root.right = Node(3)    # sets the right node (child) of the root to 3
+tree.root.left.left = Node(4)
+tree.root.left.right = Node(5)    # and so on...
 ```
 **Our tree now looks like this:**
 ```python
-#     1
-#    / \
-#   2   3
+#          1
+#        /   \
+#      2      3
+#    /  \    
+#   4    5  
 ```
 
 
