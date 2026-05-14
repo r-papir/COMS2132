@@ -10,6 +10,9 @@
 ### Hash Tables
 **Dictionary:** a generic structure for mapping key values
 **Hash Table:** implementation of a dictionary using a *hash function*
+<br>
+
+**Runtime per hash operation:**
 <img width="474" height="239" alt="table-10 2" src="https://github.com/user-attachments/assets/92fa93b4-a3f9-492a-8d0a-ce6d81ae5a49" />
 
 [![How Hash Tables Actually Work](https://img.youtube.com/vi/0Xv6wSguIlQ/0.jpg)](https://www.youtube.com/watch?v=0Xv6wSguIlQ)
