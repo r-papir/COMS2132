@@ -10,7 +10,6 @@
 ### Hash Tables
 **Dictionary:** a generic structure for mapping key values
 **Hash Table:** implementation of a dictionary using a *hash function*
-<br>
 
 **Runtime per hash operation:**
 
