@@ -1,5 +1,5 @@
 # Abstract Data Types: Binary Trees
-In computer science, a tree is an abstract model of a hierarchical structure. A **binary tree** is an abstract data structure in which each node has no more than two children, which are referred to as the "left child" and "right child". Unlike in *linked lists*, binary trees have pointers that link each node to its children. Trees often offer faster than linear algorithms (for example, *binary search*). When traversing through a binary tree, the **left child** always precedes the **right child**, and they can be written as an *ordered pair*.
+In computer science, a tree is an abstract model of a hierarchical structure. A **binary tree** is an abstract data structure in which each node has no more than two children, which are referred to as the "left child" and "right child". Unlike in *linked lists*, binary trees have pointers that link each node to its children. Trees often offer faster than linear algorithms (for example, *binary search*). When reading a binary tree, the **left child** always precedes the **right child**, and they can be written as an *ordered pair*.
 
 <img width="501" height="408" alt="tree" src="https://github.com/user-attachments/assets/466e2e46-38e9-430d-82c0-eeba66fbe2de" /> 
 
@@ -26,6 +26,25 @@ In computer science, a tree is an abstract model of a hierarchical structure. A 
 
 [![Binary Search](https://img.youtube.com/vi/9nmrkG6QtpQ/0.jpg)](https://www.youtube.com/watch?v=9nmrkG6QtpQ)
 [![Binary Trees](https://img.youtube.com/vi/EPwWrs8OtfI/0.jpg)](https://www.youtube.com/watch?v=EPwWrs8OtfI)
+
+```python
+class Node(object):
+    def __init__(self, value):    # init constructer always comes first!
+        self.value = value    # assigns whatever is passed into the class variable to 'value'
+        self.left = None    # sets up our left children
+        self.righ = None    # sets up our right children
+
+class BinaryTree(object):
+    def __init__(self, root):
+        self.root = Node(root)    # assigns the class variable 'root' to a node of the tree
+
+# ________________________________________
+
+tree = BinaryTree(1)    # sets the initial value of the tree to 1, which becomes the root
+tree.root.left = Node(2)    # sets the left node (child) of the root to 2
+tree.root.right = Node(3)    # sets the right node (child) of the root to 3
+```
+
 
 ### Linked Trees
 
