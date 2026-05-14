@@ -1,4 +1,3 @@
-# Graphs
 <img width="800" height="400" alt="introduction_to_graphs" src="https://github.com/user-attachments/assets/bb083fe7-83e4-4f61-8dcc-e2dbba3e52b3" />
 
 <ins>Defintions</ins>
