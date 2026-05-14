@@ -10,6 +10,7 @@ In computer science, a tree is an abstract model of a hierarchical structure. A 
 + A **subtree** at *C* is the tree of all the descendants of *C* in the tree (including *C* itself)
 
 **Important Terminology:**
+
 | :---: | :---: | :---: |
 | child | parent | root |
 | leaves | ancestor | descendant |
