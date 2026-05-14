@@ -2,26 +2,6 @@
 
 **Youtube Courses:**
 
-
-
-label {
-  padding-left: 5px;
-}
-
-input {
-  float: left;
-}
-
-<div>
-  <input type="checkbox" name="uchk">
-  <label for="uchk">Unchecked.</label>
-</div>
-<div>
-  <input type="checkbox" name="chk" checked>
-  <label for="chk">Checked.</label>
-</div>
-
-
 - [ ] *Hash Tables in 4 Minutes*
 - [ ] *How Hash Tables Actually Work?*
 - [ ] Finish Markdown guide
