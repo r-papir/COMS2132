@@ -137,6 +137,11 @@ If you evaluate the Boolean `item2 < item1`, what will the output be?
   True
 </details>
 
+
+**(Optional) Video:** *Priority Queues in 8 Minutes*
+
+[![Priority Queues in 8 Minutes](https://img.youtube.com/vi/wRvOzgt2ygs/0.jpg)](https://www.youtube.com/watch?v=wRvOzgt2ygs)
+
 **Video:** *Transition from Priority Queues to Heaps*
 
 [![Priority Queues to Heaps](https://img.youtube.com/vi/yntfI_jqNms/0.jpg)](https://www.youtube.com/watch?v=yntfI_jqNms)
