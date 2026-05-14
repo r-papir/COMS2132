@@ -13,20 +13,37 @@ class BinaryTree(object):
     def print_tree(self, traversal_type):
         if traversal_type == "preorder":
             return self.preorder_print(tree.root, "")
+        elif traversal_type == "inorder":
+            return self.inorder_print(tree.root, "")
+        elif traversal_type == "postorder":
+            return self.postorder_print(tree.root, "")
         else:
             print("Traversal Type " + str(traversal_type) + " is not supported.")
 
     def preorder_print(self, starting_node, traversal_string):      # the PARAMETERS are 'self', 'starting_node', and 'traversal_string'
         # this function takes 'self' because it's a member of its own class --> recursion!
-        '''Root --> Left --> Right'''
+        '''Root → Left → Right'''
         if starting_node:
             traversal_string += (str(starting_node.value) + "→")    # this creates a counter that stores all the nodes we find in a string, separating them with a dash
             traversal_string = self.preorder_print(starting_node.left, traversal_string)    # here the function recursively calls itself with 'self'
             traversal_string = self.preorder_print(starting_node.right, traversal_string)
         return traversal_string
     
+    def inorder_print(self, starting_node, traversal_string):
+        '''LEFT → ROOT → RIGHT'''
+        if starting_node:
+            traversal_string = self.inorder_print(starting_node.left, traversal_string)
+            traversal_string += (str(starting_node.value) + "→")
+            traversal_string = self.inorder_print(starting_node.right, traversal_string)
+        return traversal_string
+    
     def postorder_print(self, starting_node, traversal_string):
-        
+        '''LEFT → RIGHT → ROOT'''
+        if starting_node:
+            traversal_string = self.postorder_print(starting_node.left, traversal_string)
+            traversal_string = self.postorder_print(starting_node.right, traversal_string)
+            traversal_string += (str(starting_node.value) + "→")    # wherever you place the counter denotes which order the root will be traversed
+        return traversal_string
 
 tree = BinaryTree(1)  # sets the initial value of the tree to 1, which becomes the root
 tree.root.left = Node(2)  # sets the initial value of the tree to 1, which becomes the root
@@ -42,6 +59,38 @@ tree.root.right.right = Node(7)
 #      2       3
 #    /  \     /  \
 #   4    5   6    7
-'''Try printing the tree using different traversal methods.'''
+'''Try printing the tree using different traversal methods!'''
 
-print(tree.print_tree("preorder")) # here we specify the traversal type
+def user_select():
+
+    while True:
+        print(" ")
+        print("TRAVERSAL METHODS:")
+        print("[A] Preorder")
+        print("[B] Inorder")
+        print("[C] Postorder")
+        print("[D] Breadth-First")
+        print("[E] Exit ")
+        print(" ")
+
+        selection = input("Please enter a letter from the options above: ")
+
+        if selection == "A" or selection == "a":
+            print(" ")
+            print(tree.print_tree("preorder"))
+            print(" ")
+        elif selection == "B" or selection == "b":
+            print(" ")
+            print(tree.print_tree("inorder"))
+            print(" ")
+        elif selection == "C" or selection == "c":
+            print(" ")
+            print(tree.print_tree("postorder"))
+            print(" ")
+        elif selection == "E" or selection == "e":
+            print("Goodbye.")
+            break
+        else:
+            print("Invalid selection; please try again.")
+
+user_select()
