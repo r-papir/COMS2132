@@ -41,7 +41,7 @@ In computer science, a tree is an abstract model of a hierarchical structure. A 
 | delete(p) |  remove the node at p, replacing it with its child (if any) and return the element (reports error if there are multiple children) | 
 | attach(p,t1,t2) | attach the internal structures of t1 and t2 as left and right subtrees of leaf p | 
 
-***Can you find these operators in the program below?***
+***Can you find these operations in the program below?***
 
 ```python
 class LinkedBinaryTree(AbstractBinaryTree):
