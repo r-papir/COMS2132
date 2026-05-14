@@ -70,6 +70,17 @@ There are several systematic ways of visiting all positions of a tree:
 
 **<ins>Preorder Traversal</ins> (DFS)**
 
+1. Check if current node is empty/null.
+2. Display the data part of the root (or current node).
+3. Traverse the left subtree by recursively calling the preorder function.
+4. Traverse the right subtree by recursively calling the preorder function.
+   
+**Preorder:** F → B → A → D → C → E → G → I → H
+
+<img width="452" height="393" alt="Screenshot 2026-05-13 at 10 18 09 PM" src="https://github.com/user-attachments/assets/87a470bb-7e29-49d7-a2b3-26b48c4488a7" />
+
+
+
 **<ins>Postorder Traversal</ins> (DFS)**
 
 **<ins>Inorder Traversal</ins> (DFS)**
