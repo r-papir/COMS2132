@@ -75,7 +75,7 @@ There are several systematic ways of visiting all positions of a tree:
 3. Traverse the left subtree by recursively calling the preorder function.
 4. Traverse the right subtree by recursively calling the preorder function.
    
-**Preorder:** F → B → A → D → C → E → G → I → H
+PREORDER: F → B → A → D → C → E → G → I → H
 
 <img width="452" height="393" alt="Screenshot 2026-05-13 at 10 18 09 PM" src="https://github.com/user-attachments/assets/87a470bb-7e29-49d7-a2b3-26b48c4488a7" />
 
@@ -88,7 +88,9 @@ There are several systematic ways of visiting all positions of a tree:
 3. Display the data part of the root (or current node).
 4. Traverse the right subtree by rcursively calling the inorder function.
 
-Test out the different traversal methods **[here](https://github.com/r-papir/COMS2132/blob/main/tree_traversal.py)**.
+INORDER: A → B → C → D → E → F → G → H → I
+
+**Test out the different traversal methods [here](https://github.com/r-papir/COMS2132/blob/main/tree_traversal.py)**.
 
 
 We can store this [word list](https://github.com/r-papir/my_games/blob/main/wordle.txt) in a binary tree structure like this:
