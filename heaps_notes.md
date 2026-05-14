@@ -137,9 +137,9 @@ If you evaluate the Boolean `item2 < item1`, what will the output be?
   True
 </details>
 
-**Video:** *Priority Queues in 5 Minutes*
+**Video:** *Priority Queues in 8 Minutes*
 
-[![Priority Queues in 5 Minutes](https://img.youtube.com/vi/7z_HXFZqXqc/0.jpg)](https://www.youtube.com/watch?v=7z_HXFZqXqc)
+[![Priority Queues in 8 Minutes](https://img.youtube.com/vi/wRvOzgt2ygs/0.jpg)](https://www.youtube.com/watch?v=wRvOzgt2ygs)
 
 
 
