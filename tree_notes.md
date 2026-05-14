@@ -16,6 +16,7 @@ In computer science, a tree is an abstract model of a hierarchical structure. A 
 + Children of the same parent are **siblings**, and all *internal* nodes have at least one child.
 + Nodes that have no children are called **leaves** (also *external*).
 + A **subtree** at *C* is the tree of all the descendants of *C* in the tree (including *C* itself).
++ If the order among the children is important, we call it an *ordered* tree.
 
 ## §1: Video Lession
 
