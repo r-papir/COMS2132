@@ -162,11 +162,9 @@ Instead of a list, we can store the items (with their priorities) in a *binary h
 
 
 
+**Supplemental Videos:**
 
-**Video 3:** *Heaps in 3 Minutes*
-
-[![Heaps in 3 Minutes](https://img.youtube.com/vi/0wPlzMU-k00/0.jpg)](https://www.youtube.com/watch?v=0wPlzMU-k00)
-
+[![Heaps in 3 Minutes](https://img.youtube.com/vi/0wPlzMU-k00/0.jpg)](https://www.youtube.com/watch?v=0wPlzMU-k00) [![Heaps & Priority Queues](https://img.youtube.com/vi/E2v9hBgG6gE/0.jpg)](https://www.youtube.com/watch?v=E2v9hBgG6gE) [![Heaps & Priority Queues](https://img.youtube.com/vi/E2v9hBgG6gE/0.jpg)](https://www.youtube.com/watch?v=E2v9hBgG6gE) [![Priority Queue Introduction](https://img.youtube.com/vi/wptevk0bshY/0.jpg)](https://www.youtube.com/watch?v=wptevk0bshY)
 
 <!-- [![Alt text for image](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID) -->
 
