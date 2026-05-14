@@ -39,8 +39,6 @@ class BinaryTree(object):
     def __init__(self, root):
         self.root = Node(root)    # assigns the class variable 'root' to a node of the tree
 
-# ________________________________________
-
 tree = BinaryTree(1)    # sets the initial value of the tree to 1, which becomes the root
 tree.root.left = Node(2)    # sets the left node (child) of the root to 2
 tree.root.right = Node(3)    # sets the right node (child) of the root to 3
@@ -79,6 +77,41 @@ There are several systematic ways of visiting all positions of a tree:
 
 <img width="452" height="393" alt="Screenshot 2026-05-13 at 10 18 09 PM" src="https://github.com/user-attachments/assets/87a470bb-7e29-49d7-a2b3-26b48c4488a7" />
 
+Let's create a preorder print function responsible for printing the nodes according to preorder:
+
+```python
+class Node(object):
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.righ = None
+
+class BinaryTree(object):
+    def __init__(self, root):
+        self.root = Node(root)
+
+    def print_tree(self, traversal_type):
+        if traversal_type == "preorder":
+            return self.preorder_print()
+
+    def preorder_print(self, starting_node, traversal_string):
+    # this function takes 'self' because it's a member of the class)
+    '''Root --> Left --> Right'''
+
+        if starting_node:
+            traversal_string += (str(starting_node.value) + "-")    # this creates a counter that stores all the nodes we find in a string, separating them with a dash
+            traversal_string = self.preorder_print(start.left, traversal_string)    # here the function recursively calls itself with 'self'
+            traversal_string = self.preorder_print(starting_node.right, traversal_string)
+        return traversal_string
+
+tree = BinaryTree(1)
+tree.root.left = Node(2)
+tree.root.right = Node(3)
+tree.root.left.left = Node(4)
+tree.root.left.right = Node(5)
+tree.root.right.light = Node(6)
+tree.root.right.right = Node(7)
+```
 
 
 **<ins>Postorder Traversal</ins> (DFS)**
