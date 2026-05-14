@@ -45,15 +45,17 @@ tree = BinaryTree(1)    # sets the initial value of the tree to 1, which becomes
 tree.root.left = Node(2)    # sets the left node (child) of the root to 2
 tree.root.right = Node(3)    # sets the right node (child) of the root to 3
 tree.root.left.left = Node(4)
-tree.root.left.right = Node(5)    # and so on...
+tree.root.left.right = Node(5)
+tree.root.right.light = Node(6)
+tree.root.right.right = Node(7)
 ```
 **Our tree now looks like this:**
 ```python
-#         1
-#       /   \
-#      2     3
-#    /  \    
-#   4    5  
+#          1
+#       /     \
+#      2       3
+#    /  \     /  \
+#   4    5   6    7
 ```
 
 
