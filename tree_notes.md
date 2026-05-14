@@ -1,4 +1,22 @@
 # Abstract Data Types: Binary Trees
+In computer science, a tree is an abstract model of a hierarchical structure. A **binary tree** is an abstract data structure in which each node has no more than two children, which are referred to as the "left child" and "right child". Unlike in *linked lists*, binary trees have pointers that link each node to its children. Trees often offer faster than linear algorithms (for example, *binary search*).
+
+<img width="501" height="408" alt="tree" src="https://github.com/user-attachments/assets/466e2e46-38e9-430d-82c0-eeba66fbe2de" />
+
++ Tree *T* (above) is a set of nodes storing elements that have a parent-child relationship.
++ The first (or 'highest') node in a tree is called the **root**. In the image above, `root = A`.
++ Children of the same parent are **siblings**, and all *internal* nodes have at least one child.
++ Nodes that have no children are called **leaves** (also *external*).
++ A **subtree** at *C* is the tree of all the descendants of *C* in the tree (including *C* itself)
+
+**Important Terminology:**
+| :---: | :---: | :---: |
+| child | parent | root |
+| leaves | ancestor | descendant |
+| leaves | ancestor | subtree |
+
+
+
 
 **§1:** Video Lession
 
