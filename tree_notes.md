@@ -62,10 +62,10 @@ tree.root.right.right = Node(7)
 How do we use and move through trees? In this section, we will discuss selected tree traversal algorithms, i.e., algorithms that systematically access (or visit) all positions in a tree exactly one time. The algorithm will perform some action for each visited position as part of the visit. These actions could involve simple or complex computations, depending on the application.
 
 There are several systematic ways of visiting all positions of a tree:
-+ **Preorder:** the position is visited first, followed by recursive visits to all its children
-+ **Postorder:** the children of a node are visited before the node itself is visited
-+ **Inorder:** a subset of children is visited first, then the position itself, and then the rest of the children. Inorder traversal is mostly applicable to binary trees.
-+ **Breadth-First:** The positions are visited according to their depth (root first, then all nodes at depth 1, then all nodes at depth 2, and so on)
++ **Preorder:** the position is visited first, followed by recursive visits to all its children (***DFS order***)
++ **Postorder:** the children of a node are visited before the node itself is visited (***DFS order***)
++ **Inorder:** a subset of children is visited first, then the position itself, and then the rest of the children. Inorder traversal is mostly applicable to binary trees. (***DFS order***)
++ **Breadth-First Search (BFS):** The positions are visited according to their depth (root first, then all nodes at depth 1, then all nodes at depth 2, and so on)
 
 
 
