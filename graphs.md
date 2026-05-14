@@ -6,6 +6,7 @@
 + **Edges:** the set of edges; each edge is a pair **(v,w)**, where **v,w ∈ V**
 
 V = {v<sub>1</sub>, v<sub>2</sub>, v<sub>3</sub>, v<sub>4</sub>, v<sub>5</sub>, v<sub>6</sub>}
+
 E = {(v<sub>1</sub>, v<sub>2</sub>), (v<sub>1</sub>, v<sub>3</sub>), (v<sub>2</sub>, v<sub>3</sub> ),(v<sub>2</sub>, v<sub>5</sub> ),(v<sub>3</sub>, v<sub>4</sub>), (v<sub>3</sub>, v<sub>6</sub>),(v<sub>4</sub>, v<sub>5</sub>), (v<sub>4</sub>, v<sub>6</sub>), (v<sub>5</sub>, v<sub>6</sub>)}
 
 <img width="1358" height="764" alt="1_ABwaFOSIVFlGbJ4Kcaeu8g" src="https://github.com/user-attachments/assets/cd6a3b47-6f70-4b3d-8087-8b4750882003" />
