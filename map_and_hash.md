@@ -1,6 +1,6 @@
-# Maps & Hash Tables
+# Maps, Hash Functions, and Hash Tables
 
-**Youtube Courses:**
+**Tutorials & Courses:**
 
 - [ ] *How Hash Tables Actually Work?*
 - [ ] *Hash Maps in Python*
