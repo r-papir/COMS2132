@@ -49,9 +49,9 @@ tree.root.left.right = Node(5)    # and so on...
 ```
 **Our tree now looks like this:**
 ```python
-#          1
-#        /   \
-#      2      3
+#         1
+#       /   \
+#      2     3
 #    /  \    
 #   4    5  
 ```
