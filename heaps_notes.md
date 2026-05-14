@@ -164,6 +164,7 @@ Instead of a list, we can store the items (with their priorities) in a *binary h
 
 
 **Video 3:** *Heaps in 3 Minutes*
+
 [![Heaps in 3 Minutes](https://img.youtube.com/vi/0wPlzMU-k00/0.jpg)](https://www.youtube.com/watch?v=0wPlzMU-k00)
 
 
