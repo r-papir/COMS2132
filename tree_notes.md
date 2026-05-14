@@ -90,9 +90,24 @@ PREORDER: F → B → A → D → C → E → G → I → H
 
 INORDER: A → B → C → D → E → F → G → H → I
 
-**Test out the different traversal methods [here](https://github.com/r-papir/COMS2132/blob/main/tree_traversal.py)**.
+**<ins>Postorder Traversal</ins> (DFS)**
+
+*LEFT → RIGHT → ROOT*
+
+1. Check if current node is empty/null.
+2. Traverse the left subtree by recursively calling the inorder function.
+3. Traverse the right subtree by rcursively calling the inorder function.
+4. Display the data part of the root (or current node).
+
+**PRACTICE QUESTION:** Write the nodes in *postorder*, with an arrow between each node indicating the directon of traversal.
+
+**PRACTICE PROGRAM:** Test out the different traversal methods **[here](https://github.com/r-papir/COMS2132/blob/main/tree_traversal.py)**.
+
 
 **<ins>Breadth-First Traversal</ins> (BFS)**
+
+
+*ROOT → LEFT → RIGHT*
 
 
 ### Linked Trees
