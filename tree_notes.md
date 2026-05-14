@@ -27,7 +27,7 @@ In computer science, a tree is an abstract model of a hierarchical structure. A 
 [![Binary Search](https://img.youtube.com/vi/9nmrkG6QtpQ/0.jpg)](https://www.youtube.com/watch?v=9nmrkG6QtpQ)
 [![Binary Trees](https://img.youtube.com/vi/EPwWrs8OtfI/0.jpg)](https://www.youtube.com/watch?v=EPwWrs8OtfI)
 
-### §1: Building a Binary Tree
+## §1: Building a Binary Tree
 ```python
 class Node(object):
     def __init__(self, value):    # init constructer always comes first!
@@ -58,7 +58,7 @@ tree.root.right.right = Node(7)
 #   4    5   6    7
 ```
 
-### §2: Traversing a Binary Tree
+## §2: Traversing a Binary Tree
 How do we use and move through trees? In this section, we will discuss selected tree traversal algorithms, i.e., algorithms that systematically access (or visit) all positions in a tree exactly one time. The algorithm will perform some action for each visited position as part of the visit. These actions could involve simple or complex computations, depending on the application.
 
 There are several systematic ways of visiting all positions of a tree:
