@@ -65,6 +65,7 @@ There are several systematic ways of visiting all positions of a tree:
 + **Inorder:** a subset of children is visited first, then the position itself, and then the rest of the children. Inorder traversal is mostly applicable to binary trees. (*DFS order*)
 + **Breadth-First:** The positions are visited according to their depth (root first, then all nodes at depth 1, then all nodes at depth 2, and so on)
 
+<img width="452" height="393" alt="Screenshot 2026-05-13 at 10 18 09 PM" src="https://github.com/user-attachments/assets/87a470bb-7e29-49d7-a2b3-26b48c4488a7" />
 
 **<ins>Preorder Traversal</ins> (DFS)**
 
@@ -77,7 +78,7 @@ There are several systematic ways of visiting all positions of a tree:
    
 PREORDER: F → B → A → D → C → E → G → I → H
 
-<img width="452" height="393" alt="Screenshot 2026-05-13 at 10 18 09 PM" src="https://github.com/user-attachments/assets/87a470bb-7e29-49d7-a2b3-26b48c4488a7" />
+___
 
 **<ins>Inorder Traversal</ins> (DFS)**
 
@@ -90,6 +91,8 @@ PREORDER: F → B → A → D → C → E → G → I → H
 
 INORDER: A → B → C → D → E → F → G → H → I
 
+___
+
 **<ins>Postorder Traversal</ins> (DFS)**
 
 *LEFT → RIGHT → ROOT*
@@ -99,15 +102,13 @@ INORDER: A → B → C → D → E → F → G → H → I
 3. Traverse the right subtree by rcursively calling the inorder function.
 4. Display the data part of the root (or current node).
 
-**PRACTICE QUESTION:** Write the nodes in *postorder*, with an arrow between each node indicating the directon of traversal.
+**PRACTICE QUESTION:** Write the nodes in *postorder*, with an arrow between each node indicating the directon of traversal (as shown above).
 
 **PRACTICE PROGRAM:** Test out the different traversal methods **[here](https://github.com/r-papir/COMS2132/blob/main/tree_traversal.py)**.
 
+___
 
 **<ins>Breadth-First Traversal</ins> (BFS)**
-
-
-*ROOT → LEFT → RIGHT*
 
 
 ### Linked Trees
