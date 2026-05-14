@@ -1,6 +1,7 @@
 # Abstract Data Types: Binary Trees
 
 **§1:** Video Lession
+
 [![Binary Trees & Search](https://img.youtube.com/vi/EPwWrs8OtfI/0.jpg)](https://www.youtube.com/watch?v=EPwWrs8OtfI)
 
 
