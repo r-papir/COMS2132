@@ -8,7 +8,7 @@ In computer science, a tree is an abstract model of a hierarchical structure. A 
 | :---: | :---: | :---: |
 | child | parent | root |
 | leaves | ancestor | descendant |
-| Subtree |  |  | 
+| Subtree | depth | height | 
 
 
 + Tree *T* (above) is a set of nodes storing elements that have a **parent-child** relationship.
@@ -16,6 +16,9 @@ In computer science, a tree is an abstract model of a hierarchical structure. A 
 + Children of the same parent are **siblings**, and all *internal* nodes have at least one child.
 + Nodes that have no children are called **leaves** (also *external*).
 + A **subtree** at *C* is the tree of all the descendants of *C* in the tree (including *C* itself).
+
++ The **depth** of a node describes the number of ancestors from that node.
++ The **height** of a tree (or subtree) describes the *maximum depth* of any node.
 + If the order among the children is important, we call it an *ordered* tree.
 
 ## §1: Video Lession
