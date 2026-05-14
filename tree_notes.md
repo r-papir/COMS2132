@@ -68,6 +68,8 @@ There are several systematic ways of visiting all positions of a tree:
 
 **<ins>Preorder Traversal</ins> (DFS)**
 
+*ROOT → LEFT → RIGHT*
+
 1. Check if current node is empty/null.
 2. Display the data part of the root (or current node).
 3. Traverse the left subtree by recursively calling the preorder function.
@@ -77,17 +79,11 @@ There are several systematic ways of visiting all positions of a tree:
 
 <img width="452" height="393" alt="Screenshot 2026-05-13 at 10 18 09 PM" src="https://github.com/user-attachments/assets/87a470bb-7e29-49d7-a2b3-26b48c4488a7" />
 
-
-
-**<ins>Postorder Traversal</ins> (DFS)**
-
-<img width="422" height="364" alt="Screenshot 2026-05-13 at 11 06 03 PM" src="https://github.com/user-attachments/assets/56f1cb7d-994b-4070-b389-6173a48af1b6" />
-
-
 **<ins>Inorder Traversal</ins> (DFS)**
 
+*LEFT → ROOT → RIGHT*
 
-Test out different traversal methods **[here](https://github.com/r-papir/COMS2132/blob/main/tree_traversal.py)**.
+Test out the different traversal methods **[here](https://github.com/r-papir/COMS2132/blob/main/tree_traversal.py)**.
 
 
 We can store this [word list](https://github.com/r-papir/my_games/blob/main/wordle.txt) in a binary tree structure like this:
@@ -116,6 +112,9 @@ def insert(self, e):
 AbstractBinaryTree._insert_below = _insert_below
 AbstractBinaryTree.insert = insert
 ```
+
+
+**<ins>Postorder Traversal</ins> (DFS)**
 
 
 
