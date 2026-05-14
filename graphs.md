@@ -17,4 +17,4 @@ Graphs may be **directed** or **undirected**.
 
 <img width="526" height="318" alt="Screenshot 2026-05-14 at 2 56 13 AM" src="https://github.com/user-attachments/assets/c13e1edb-8998-4294-8445-7034293bf9c9" />
 
-
+**Vertex *w*** is adjacent to **vertex *v*** if **(w,v) ∈ E**. A **path** is a sequence of vertices w<sub>1</sub>, w<sub>2</sub>, ...w<sub>k</sub>, such that **(w<sub>i</sub>, w<sub>i+1</sub>) ∈ E**.
