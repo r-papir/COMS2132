@@ -11,6 +11,7 @@ In computer science, a tree is an abstract model of a hierarchical structure. A 
 
 **Important Terminology:**
 
+|   |   |   |
 | :---: | :---: | :---: |
 | child | parent | root |
 | leaves | ancestor | descendant |
