@@ -11,6 +11,10 @@ E = {(v<sub>1</sub>, v<sub>2</sub>), (v<sub>1</sub>, v<sub>3</sub>), (v<sub>2</s
 
 <img width="389" height="344" alt="Screenshot 2026-05-14 at 2 50 17 AM" src="https://github.com/user-attachments/assets/70722820-1651-4469-b7a5-1fd58dd778e5" />
 
+Graphs may be **directed** or **undirected**.
++ In *directed* graphs, the edge pairs are ordered.
++ Edges often have some weight or cost associated with them (*weighted graphs*).
 
+<img width="526" height="318" alt="Screenshot 2026-05-14 at 2 56 13 AM" src="https://github.com/user-attachments/assets/c13e1edb-8998-4294-8445-7034293bf9c9" />
 
 
