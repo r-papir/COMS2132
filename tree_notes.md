@@ -1,4 +1,8 @@
-## Abstract Data Types: Trees
+# Abstract Data Types: Binary Trees
+
+**§1:** Video Lession
+[![Binary Trees & Search](https://img.youtube.com/vi/EPwWrs8OtfI/0.jpg)](https://www.youtube.com/watch?v=EPwWrs8OtfI)
+
 
 ### Accessor Methods:
 ```python
@@ -26,3 +30,7 @@ T.positions(): # generates an iteration of all positions of tree T
 iter(T): # generates an iterations of all elements stored within tree T
 
 ```
+
+
+
+<!-- [![Alt text for image](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID) -->
