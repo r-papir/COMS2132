@@ -8,9 +8,8 @@
 - [ ] *[Introduction to Hashing](https://www.geeksforgeeks.org/dsa/introduction-to-hashing-2/)*
 
 ### Hash Tables
-**Dictionary:** a generic structure for mapping key values
-
-**Hash Table:** implementation of a dictionary using a *hash function*
++ **Dictionary:** a generic structure for mapping key values
++ **Hash Table:** implementation of a dictionary using a *hash function*
 
 **Runtime per hash operation:**
 
