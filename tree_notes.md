@@ -83,6 +83,11 @@ There are several systematic ways of visiting all positions of a tree:
 
 *LEFT → ROOT → RIGHT*
 
+1. Check if current node is empty/null.
+2. Traverse the left subtree by recursively calling the inorder function.
+3. Display the data part of the root (or current node).
+4. Traverse the right subtree by rcursively calling the inorder function.
+
 Test out the different traversal methods **[here](https://github.com/r-papir/COMS2132/blob/main/tree_traversal.py)**.
 
 
