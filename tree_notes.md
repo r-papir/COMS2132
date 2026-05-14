@@ -35,11 +35,11 @@ In computer science, a tree is an abstract model of a hierarchical structure. A 
 |  Operation | How it works  |
 | :---: | :--- |
 | add_root(e) | create a root for an empty tree |
-| add_left(p, e) | link the node as left child of p |
-| add_right(p, e) | link the node as right child of p | 
-| replace(p, e) | replace the element stored at p with e | 
+| add_left(p,e) | link the node as left child of p |
+| add_right(p,e) | link the node as right child of p | 
+| replace(p,e) | replace the element stored at p with e | 
 | delete(p) |  remove the node at p, replacing it with its child (if any) and return the element (reports error if there are multiple children) | 
-| attach(p, t1, t2 | attach the internal structures of t1 and t2 as left and right subtrees of leaf p | 
+| attach(p,t1,t2) | attach the internal structures of t1 and t2 as left and right subtrees of leaf p | 
 
 ***Can you find these operators in the program below?***
 
