@@ -45,6 +45,12 @@ tree = BinaryTree(1)    # sets the initial value of the tree to 1, which becomes
 tree.root.left = Node(2)    # sets the left node (child) of the root to 2
 tree.root.right = Node(3)    # sets the right node (child) of the root to 3
 ```
+**Our tree now looks like this:**
+```python
+#     1
+#    / \
+#   2   3
+```
 
 
 ### Linked Trees
