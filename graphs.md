@@ -20,3 +20,7 @@ Graphs may be **directed** or **undirected**.
 **Vertex *w*** is adjacent to **vertex *v*** if **(w,v) ∈ E**.
 
 A **path** is a sequence of vertices w<sub>1</sub>, w<sub>2</sub>, ...w<sub>k</sub>, such that **(w<sub>i</sub>, w<sub>i+1</sub>) ∈ E**.
+
+## Traversing a Graph
+
+**Breadth-First Search (BFS):** a traversing algorithm where you should start traversing from a selected node (source or starting node) and traverse the graph layerwise thus exploring the neighbour nodes (nodes which are directly connected to source node). You must then move towards the next-level neighbour nodes. On a tree, BFS is implemented at *level-order*.
